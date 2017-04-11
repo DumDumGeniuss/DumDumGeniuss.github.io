@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import HomePage from './components/pages/HomePage/HomePage.js';
 
 
 const app = document.getElementById('app');
@@ -7,7 +8,9 @@ const app = document.getElementById('app');
 class Home extends React.Component {
 	render() {
 		return (
-			<h1>Hola!</h1>
+			<div>
+				<HomePage />
+			</div>
 		);
 	}
 }
