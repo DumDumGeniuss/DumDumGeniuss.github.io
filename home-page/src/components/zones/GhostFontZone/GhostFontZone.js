@@ -77,7 +77,7 @@ class GhostFontZone extends React.Component {
 		return (
 			<div id={this.props.id} style={zoneSize} className={style.mainZone}>
 				<GhostFont 
-					words={wordsGroup.english}
+					words={wordsGroup.japanese}
 					fontSize={'6em'}
 					color={'#27AE60'}
 					left={35}
@@ -107,7 +107,7 @@ class GhostFontZone extends React.Component {
 					direction={2}
 				/>
 				<GhostFont 
-					words={wordsGroup.japanese}
+					words={wordsGroup.english}
 					fontSize={'6em'}
 					color={'#E74C3C'}
 					left={80}

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import I18nFont from '../../fonts/I18nFont/I18nFont.js';
 import PowerZone from '../../zones/PowerZone/PowerZone.js';
 import GhostFontZone from '../../zones/GhostFontZone/GhostFontZone.js';
+import SocialIconsZone from '../../zones/SocialIconsZone/SocialIconsZone.js';
 import style from './HomePage.css';
 
 class HomePage extends React.Component {
@@ -26,15 +26,7 @@ class HomePage extends React.Component {
 					heightUnit={'vh'}
 					backgroundColor={'black'}
 				/>
-				<PowerZone
-					width={100}
-					widthUnit={'vw'}
-					height={100}
-					heightUnit={'vh'}
-					backgroundColor={'#DDDDDD'}
-				>
-					<I18nFont />
-				</PowerZone>
+				<SocialIconsZone />
 			</div>
 		);
 	}

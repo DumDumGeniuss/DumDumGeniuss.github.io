@@ -1,0 +1,10 @@
+.mainZone {
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 8px;
+}

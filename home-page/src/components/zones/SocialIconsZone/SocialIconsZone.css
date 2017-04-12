@@ -1,0 +1,10 @@
+.mainZone {
+	position: fixed;
+	display: inline-flex;
+    flex-direction: column;
+	right: 0;
+	top: 50vh;
+	padding: 10px;
+	transform: translate(0, -50%);
+	color: white;
+}
