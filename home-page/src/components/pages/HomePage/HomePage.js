@@ -1,16 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import I18nFont from '../../fonts/I18nFont/I18nFont.js';
-import './HomePage.css';
+import GhostFont from '../../fonts/GhostFont/GhostFont.js';
+import PowerZone from '../../zones/PowerZone/PowerZone.js';
+import GhostFontZone from '../../zones/GhostFontZone/GhostFontZone.js';
+import style from './HomePage.css';
 
 class HomePage extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		};
+	}
+	componentDidMount() {
+	}
+	componentWillUnmount() {
+	}
 	render() {
 		return (
-			<div className={'HomePage-mainZone'}>
-				<h1>Hola</h1>
-				<div className={'HomePage-flyFontsZone'}>
-
-				</div>
+			<div className={style.mainZone}>
+				<GhostFontZone
+					id={'HomePage-helloZone'}
+					width={100}
+					widthUnit={'vw'}
+					height={100}
+					heightUnit={'vh'}
+					backgroundColor={'black'}
+				/>
+				<PowerZone
+					width={100}
+					widthUnit={'vw'}
+					height={100}
+					heightUnit={'vh'}
+					backgroundColor={'#DDDDDD'}
+				>
+					<I18nFont />
+				</PowerZone>
 			</div>
 		);
 	}

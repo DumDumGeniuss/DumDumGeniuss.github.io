@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './I18nFont.css';
+import style from './I18nFont.css';
 
 
-class Home extends React.Component {
+class I18nFont extends React.Component {
 	render() {
 		return (
-			<h1>Hola!</h1>
+			<div className={style.mainZone}>
+				Hola!
+			</div>
 		);
 	}
 }
 
-export default Home;
+export default I18nFont;

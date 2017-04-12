@@ -1,0 +1,12 @@
+.mainZone {
+	display: inline-block;
+}
+
+.mainZone:before {
+	content: '';
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: red;
+}
