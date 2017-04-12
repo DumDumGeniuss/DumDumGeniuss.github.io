@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import I18nFont from '../../fonts/I18nFont/I18nFont.js';
-import GhostFont from '../../fonts/GhostFont/GhostFont.js';
 import PowerZone from '../../zones/PowerZone/PowerZone.js';
 import GhostFontZone from '../../zones/GhostFontZone/GhostFontZone.js';
 import style from './HomePage.css';
@@ -22,7 +21,7 @@ class HomePage extends React.Component {
 				<GhostFontZone
 					id={'HomePage-helloZone'}
 					width={100}
-					widthUnit={'vw'}
+					widthUnit={'%'}
 					height={100}
 					heightUnit={'vh'}
 					backgroundColor={'black'}

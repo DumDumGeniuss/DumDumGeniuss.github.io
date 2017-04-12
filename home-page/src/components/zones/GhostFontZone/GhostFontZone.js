@@ -47,9 +47,11 @@ class GhostFontZone extends React.Component {
 		this.state = {
 			wordsOrder: -1
 		};
+		this.changeWords = this.changeWords.bind(this);
 	}
 	componentDidMount() {
-		this.changeWordsInterval = setInterval(this.changeWords.bind(this), 4000);
+		setTimeout(this.changeWords, 500);
+		this.changeWordsInterval = setInterval(this.changeWords, 4000);
 	}
 	changeWords() {
 		this.setState({
@@ -73,9 +75,9 @@ class GhostFontZone extends React.Component {
 					fontSize={'6em'}
 					color={'#27AE60'}
 					left={30}
-					leftUnit={'vw'}
+					leftUnit={'%'}
 					top={20}
-					topUnit={'vh'}
+					topUnit={'%'}
 					direction={0}
 				/>
 				<GhostFont 
@@ -93,9 +95,9 @@ class GhostFontZone extends React.Component {
 					fontSize={'6em'}
 					color={'#E67E22'}
 					left={70}
-					leftUnit={'vw'}
+					leftUnit={'%'}
 					top={80}
-					topUnit={'vh'}
+					topUnit={'%'}
 					direction={2}
 				/>
 				<GhostFont 
@@ -103,9 +105,9 @@ class GhostFontZone extends React.Component {
 					fontSize={'6em'}
 					color={'#E74C3C'}
 					left={80}
-					leftUnit={'vw'}
+					leftUnit={'%'}
 					top={30}
-					topUnit={'vh'}
+					topUnit={'%'}
 					direction={3}
 				/>
 			</div>
