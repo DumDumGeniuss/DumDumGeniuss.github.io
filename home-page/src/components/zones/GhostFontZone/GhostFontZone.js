@@ -25,8 +25,14 @@ const wordsGroups = [
 	{
 		chinese: '很高興認識你',
 		english: 'Nice to meet you',
-		spanish: 'Mucha gusto',
+		spanish: 'Mucho gusto',
 		japanese: 'よろしく'
+	},
+	{
+		chinese: '歡迎！',
+		english: 'Welcome!',
+		spanish: '¡bienvenido!',
+		japanese: 'よこそう！'
 	},
 
 ];
@@ -74,7 +80,7 @@ class GhostFontZone extends React.Component {
 					words={wordsGroup.english}
 					fontSize={'6em'}
 					color={'#27AE60'}
-					left={30}
+					left={35}
 					leftUnit={'%'}
 					top={20}
 					topUnit={'%'}
@@ -86,7 +92,7 @@ class GhostFontZone extends React.Component {
 					color={'#2980B9'}
 					left={20}
 					leftUnit={'%'}
-					top={70}
+					top={65}
 					topUnit={'%'}
 					direction={1}
 				/>
@@ -94,7 +100,7 @@ class GhostFontZone extends React.Component {
 					words={wordsGroup.spanish}
 					fontSize={'6em'}
 					color={'#E67E22'}
-					left={70}
+					left={65}
 					leftUnit={'%'}
 					top={80}
 					topUnit={'%'}
@@ -106,7 +112,7 @@ class GhostFontZone extends React.Component {
 					color={'#E74C3C'}
 					left={80}
 					leftUnit={'%'}
-					top={30}
+					top={35}
 					topUnit={'%'}
 					direction={3}
 				/>
