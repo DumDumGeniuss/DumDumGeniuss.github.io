@@ -18,7 +18,10 @@ class SocialIcon extends React.Component {
 		};
 	}
 	constructor(props) {
-		super(props)
+		super(props);
+		this.state = {
+			spin: false
+		};
 		this.typeIconMap = {
 			medium: <Medium />,
 			facebook: <Facebook />,
@@ -30,9 +33,15 @@ class SocialIcon extends React.Component {
 		return this.typeIconMap[type];
 	}
 	_onMouseEnter(e) {
+		this.setState({
+			spin: true
+		});
 		this.props.onMouseEnter(e);
 	}
 	_onMouseLeave(e) {
+		this.setState({
+			spin: false
+		});
 		this.props.onMouseLeave(e);
 	}
 	render() {
@@ -41,12 +50,14 @@ class SocialIcon extends React.Component {
 			backgroundColor: this.props.backgroundColor
 		}
 		const Icon = this.getIcon(this.props.type);
+		const mainZoneClass = this.state.spin ? style.mainZone + ' ' + style.mainZoneSpin : style.mainZone;
+
 		return (
 			<a
 				target={'_blank'}
 				style={iconStyle}
 				href={this.props.link}
-				className={style.mainZone}
+				className={mainZoneClass}
 				onMouseEnter={this._onMouseEnter.bind(this)}
 				onMouseLeave={this._onMouseLeave.bind(this)}
 			>
