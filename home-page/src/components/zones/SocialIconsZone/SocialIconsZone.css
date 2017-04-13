@@ -21,3 +21,14 @@
 	top: 50vh;
 	transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 600px) {
+	.iconsZone {
+	    flex-direction: row;
+	    justify-content: space-around;
+	    width: 80vw;
+		left: 50%;
+		top: 90vh;
+		transform: translate(-50%, 0);
+	}
+}

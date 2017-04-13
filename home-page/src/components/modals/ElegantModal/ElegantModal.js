@@ -39,12 +39,12 @@ class ElegantModal extends React.Component {
 		return (
 			<div className={mainZoneClass}>
 				<div className={style.borderZone}>
-					<div style={ {...this.basicLineStyle, top: 0, right: '200px'} } className={horizontalLineClass} />
-					<div style={ {...this.basicLineStyle, top: 0, left: '200px',} } className={horizontalLineClass} />
-					<div style={ {...this.basicLineStyle, bottom: 0, right: '20px'} } className={horizontalLineClass} />
-					<div style={ {...this.basicLineStyle, bottom: 0, left: '20px',} } className={horizontalLineClass} />
-					<div style={ {...this.basicLineStyle, top: '20px', left: 0} } className={verticalLineClass} />
-					<div style={ {...this.basicLineStyle, top: '20px', right: 0} } className={verticalLineClass} />
+					<div style={ {...this.basicLineStyle, top: 0, right: '50%'} } className={horizontalLineClass} />
+					<div style={ {...this.basicLineStyle, top: 0, left: '50%',} } className={horizontalLineClass} />
+					<div style={ {...this.basicLineStyle, bottom: 0, right: '5%'} } className={horizontalLineClass} />
+					<div style={ {...this.basicLineStyle, bottom: 0, left: '5%',} } className={horizontalLineClass} />
+					<div style={ {...this.basicLineStyle, top: '5%', left: 0} } className={verticalLineClass} />
+					<div style={ {...this.basicLineStyle, top: '5%', right: 0} } className={verticalLineClass} />
 					<div style={ {left: 0, top: 0} } className={style.circularSection}>
 						<div style={ {...this.basicCircleStyle} } className={quarterCircleClass}></div>
 					</div>
