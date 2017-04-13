@@ -73,22 +73,34 @@ class SocialIconsZone extends React.Component {
 					<ElegantModal 
 						grow={this.state.showMedium}
 						borderColor={'#0be370'}
-						backgroundColor={'#0be370'}
+						backgroundColor={'#37b773'}
+						color={'white'}
+						title={'Medium'}
+						content={'You\'re heading to dumdumgenius\' Medium page, if you are prepared, click to go!'}
 					/>
 					<ElegantModal 
 						grow={this.state.showFacebook}
 						borderColor={'#3b5998'}
-						backgroundColor={'#3b5998'}
+						backgroundColor={'#5b6c90'}
+						color={'white'}
+						title={'Facebook'}
+						content={'You\'re heading to dumdumgenius\' Facebook page, if you are prepared, click to go!'}
 					/>
 					<ElegantModal 
 						grow={this.state.showGithub}
 						borderColor={'white'}
-						backgroundColor={'white'}
+						backgroundColor={'#bfbfbf'}
+						color={'white'}
+						title={'Github'}
+						content={'You\'re heading to dumdumgenius\' Github page, if you are prepared, click to go!'}
 					/>
 					<ElegantModal 
 						grow={this.state.showYoutube}
 						borderColor={'#e62117'}
-						backgroundColor={'#e62117'}
+						backgroundColor={'#e86e68'}
+						color={'white'}
+						title={'Youtube'}
+						content={'You\'re heading to dumdumgenius\' Youtube page, if you are prepared, click to go!'}
 					/>
 				</div>
 			</div>

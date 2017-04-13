@@ -23,6 +23,9 @@ class ElegantModal extends React.Component {
 		this.contentZoneStyle = {
 			backgroundColor: this.props.backgroundColor
 		};
+		this.contentTitleStyle = {
+			color: this.props.color
+		}
 	}
 	componentDidMount() {
 	}
@@ -56,6 +59,10 @@ class ElegantModal extends React.Component {
 					</div>
 				</div>
 				<div style={this.contentZoneStyle} className={contentZoneClass}>
+					<h1 style={this.contentTitleStyle} className={style.contentTitle}>
+						<b>{this.props.title}</b>
+					</h1>
+					<p style={this.contentTitleStyle} className={style.contentWords}>{this.props.content}</p>
 				</div>
 			</div>
 		);
