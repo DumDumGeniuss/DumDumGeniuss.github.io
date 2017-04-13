@@ -12,7 +12,9 @@ class SocialIcon extends React.Component {
 			type: React.PropTypes.string,
 			link: React.PropTypes.string,
 			backgroundColor: React.PropTypes.string,
-			color: React.PropTypes.string
+			color: React.PropTypes.string,
+			onMouseEnter: React.PropTypes.func,
+			onMouseLeave: React.PropTypes.func
 		};
 	}
 	constructor(props) {
@@ -27,6 +29,12 @@ class SocialIcon extends React.Component {
 	getIcon(type) {
 		return this.typeIconMap[type];
 	}
+	_onMouseEnter(e) {
+		this.props.onMouseEnter(e);
+	}
+	_onMouseLeave(e) {
+		this.props.onMouseLeave(e);
+	}
 	render() {
 		const iconStyle = {
 			color: this.props.color,
@@ -34,7 +42,14 @@ class SocialIcon extends React.Component {
 		}
 		const Icon = this.getIcon(this.props.type);
 		return (
-			<a target={'_blank'} style={iconStyle} href={this.props.link} className={style.mainZone}>
+			<a
+				target={'_blank'}
+				style={iconStyle}
+				href={this.props.link}
+				className={style.mainZone}
+				onMouseEnter={this._onMouseEnter.bind(this)}
+				onMouseLeave={this._onMouseLeave.bind(this)}
+			>
 				{Icon}
 			</a>
 		);
