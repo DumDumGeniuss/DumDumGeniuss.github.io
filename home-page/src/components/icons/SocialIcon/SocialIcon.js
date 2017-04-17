@@ -54,7 +54,7 @@ class SocialIcon extends React.Component {
 
 		return (
 			<a
-				target={'_blank'}
+				// target={'_blank'}
 				style={iconStyle}
 				href={this.props.link}
 				className={mainZoneClass}

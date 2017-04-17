@@ -76,7 +76,7 @@ class SocialIconsZone extends React.Component {
 						backgroundColor={'#37b773'}
 						color={'white'}
 						title={'Medium'}
-						content={'You\'re heading to dumdumgenius\' Medium page, if you are prepared, click to go!'}
+						content={'You\'re heading to dumdumgenius\' Medium page, I\'m writing some stories here!'}
 					/>
 					<ElegantModal 
 						grow={this.state.showFacebook}
@@ -84,7 +84,7 @@ class SocialIconsZone extends React.Component {
 						backgroundColor={'#5b6c90'}
 						color={'white'}
 						title={'Facebook'}
-						content={'You\'re heading to dumdumgenius\' Facebook page, if you are prepared, click to go!'}
+						content={'You\'re heading to dumdumgenius\' Facebook page, don\'t forget to thumb up if you like it!'}
 					/>
 					<ElegantModal 
 						grow={this.state.showGithub}
@@ -92,7 +92,7 @@ class SocialIconsZone extends React.Component {
 						backgroundColor={'#bfbfbf'}
 						color={'white'}
 						title={'Github'}
-						content={'You\'re heading to dumdumgenius\' Github page, if you are prepared, click to go!'}
+						content={'You\'re heading to dumdumgenius\' Github page, you can see all my projects here!'}
 					/>
 					<ElegantModal 
 						grow={this.state.showYoutube}
@@ -100,7 +100,7 @@ class SocialIconsZone extends React.Component {
 						backgroundColor={'#e86e68'}
 						color={'white'}
 						title={'Youtube'}
-						content={'You\'re heading to dumdumgenius\' Youtube page, if you are prepared, click to go!'}
+						content={'You\'re heading to dumdumgenius\' Youtube page, some cool videos are here to be discovered!'}
 					/>
 				</div>
 			</div>
