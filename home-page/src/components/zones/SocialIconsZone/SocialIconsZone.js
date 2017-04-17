@@ -32,6 +32,9 @@ class SocialIconsZone extends React.Component {
 		modal[modalName] = isOn;
 		this.setState(modal);
 	}
+	onModalClick(url, e) {
+		window.open(url, "_blank");
+	}
 	render() {
 		return (
 			<div className={style.mainZone}>
@@ -40,7 +43,7 @@ class SocialIconsZone extends React.Component {
 						onMouseEnter={this.showSocialModal.bind(this, 'showMedium')}
 						onMouseLeave={this.hideSocialModal.bind(this, 'showMedium')}
 						type={'medium'}
-						link={'https://medium.com/me/stories/public'}
+						link={'https://medium.com/@dumdumgenius'}
 						backgroundColor={'#0be370'}
 						color={'black'}
 					/>
@@ -77,6 +80,7 @@ class SocialIconsZone extends React.Component {
 						color={'white'}
 						title={'Medium'}
 						content={'You\'re heading to dumdumgenius\' Medium page, I\'m writing some stories here!'}
+						onClick={this.onModalClick.bind(this, 'https://medium.com/@dumdumgenius')}
 					/>
 					<ElegantModal 
 						grow={this.state.showFacebook}

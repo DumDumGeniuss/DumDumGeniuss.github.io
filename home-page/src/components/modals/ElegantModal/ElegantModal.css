@@ -4,6 +4,7 @@
 	width: 400px;
 	height: 400px;
 	transition: all 0.1s;
+	cursor: pointer;
 }
 
 .mainZone.mainZoneGrow {

@@ -32,6 +32,9 @@ class SocialIcon extends React.Component {
 	getIcon(type) {
 		return this.typeIconMap[type];
 	}
+	_onMouseClick(e) {
+		
+	}
 	_onMouseEnter(e) {
 		this.setState({
 			spin: true
@@ -54,7 +57,7 @@ class SocialIcon extends React.Component {
 
 		return (
 			<a
-				// target={'_blank'}
+				target={'_blank'}
 				style={iconStyle}
 				href={this.props.link}
 				className={mainZoneClass}

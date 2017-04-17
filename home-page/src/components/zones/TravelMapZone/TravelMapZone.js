@@ -41,7 +41,7 @@ class TravelMapZone extends React.Component {
 					<GoogleMapReact
 						bootstrapURLKeys={{key: 'AIzaSyCtDzC6MrTnBK-OE4yaVTKwuczLDIGyvk8'}}
 						defaultCenter={{lat: 25, lng: 121.5}}
-						defaultZoom={1}
+						defaultZoom={0}
 						center={this.state.mapCenter}
 						zoom={this.state.mapZoom}
 						options={this.state.mapOptions}

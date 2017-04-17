@@ -9,6 +9,7 @@ class ElegantModal extends React.Component {
 			grow: React.PropTypes.bool,
 			borderColor: React.PropTypes.string,
 			backgroundColor: React.PropTypes.string,
+			onClick: React.PropTypes.func
 		};
 	}
 	constructor(props) {
@@ -29,6 +30,9 @@ class ElegantModal extends React.Component {
 	}
 	componentDidMount() {
 	}
+	_onClick(e) {
+		this.props.onClick(e);
+	}
 	render() {
 		const mainZoneClass = this.props.grow ? style.mainZone + ' ' + style.mainZoneGrow : style.mainZone;
 		const horizontalLineClass = this.props.grow ? style.horizontalLine + ' ' + style.horizontalLineGrow : style.horizontalLine;
@@ -37,7 +41,7 @@ class ElegantModal extends React.Component {
 		const contentZoneClass = this.props.grow ? style.contentZone + ' ' + style.contentZoneGrow : style.contentZone;
 
 		return (
-			<div className={mainZoneClass}>
+			<div onClick={this._onClick.bind(this)} className={mainZoneClass}>
 				<div className={style.borderZone}>
 					<div style={ {...this.basicLineStyle, top: 0, right: '50%'} } className={horizontalLineClass} />
 					<div style={ {...this.basicLineStyle, top: 0, left: '50%',} } className={horizontalLineClass} />
