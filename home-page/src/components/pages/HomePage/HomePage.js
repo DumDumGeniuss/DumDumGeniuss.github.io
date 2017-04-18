@@ -30,7 +30,7 @@ class HomePage extends React.Component {
 				<SocialIconsZone />
 				<TravelMapZone
 					id={'HomePage-TravelMapZone'}
-					width={70}
+					width={100}
 					widthUnit={'%'}
 					height={100}
 					heightUnit={'vh'}

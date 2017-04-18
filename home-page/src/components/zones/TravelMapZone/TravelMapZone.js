@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import style from './TravelMapZone.css';
 import GoogleMapReact from 'google-map-react';
+import mapStyle from './mapStyle.json';
 
 class TravelMapZone extends React.Component {
 	static get propTypes() {
@@ -18,7 +19,19 @@ class TravelMapZone extends React.Component {
 		super(props);
 		const self = this;
 		this.state = {
-			mapCenter: {lat: 25, lng: 121.5}
+			mapCenter: {lat: 25, lng: 121.5},
+			mapOptions: {
+				scrollwheel: false,
+			    panControl: false,
+			    zoomControl: false,
+			    mapTypeControl: false,
+			    scaleControl: false,
+			    streetViewControl: false,
+			    overviewMapControl: false,
+			    rotateControl: false,
+				styles: mapStyle
+			    // backgroundColor: 'yellow'
+			},
 		};
 		this._moveCenter = this._moveCenter.bind(this);
 		// setInterval( function () {
@@ -41,7 +54,7 @@ class TravelMapZone extends React.Component {
 					<GoogleMapReact
 						bootstrapURLKeys={{key: 'AIzaSyCtDzC6MrTnBK-OE4yaVTKwuczLDIGyvk8'}}
 						defaultCenter={{lat: 25, lng: 121.5}}
-						defaultZoom={0}
+						defaultZoom={4}
 						center={this.state.mapCenter}
 						zoom={this.state.mapZoom}
 						options={this.state.mapOptions}

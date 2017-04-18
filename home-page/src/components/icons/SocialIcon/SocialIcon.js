@@ -33,7 +33,7 @@ class SocialIcon extends React.Component {
 		return this.typeIconMap[type];
 	}
 	_onMouseClick(e) {
-		
+
 	}
 	_onMouseEnter(e) {
 		this.setState({
@@ -58,13 +58,16 @@ class SocialIcon extends React.Component {
 		return (
 			<a
 				target={'_blank'}
-				style={iconStyle}
 				href={this.props.link}
-				className={mainZoneClass}
-				onMouseEnter={this._onMouseEnter.bind(this)}
-				onMouseLeave={this._onMouseLeave.bind(this)}
 			>
-				{Icon}
+				<div
+					style={iconStyle}
+					className={mainZoneClass}
+					onMouseEnter={this._onMouseEnter.bind(this)}
+					onMouseLeave={this._onMouseLeave.bind(this)}
+				>
+					{Icon}
+				</div>
 			</a>
 		);
 	}
