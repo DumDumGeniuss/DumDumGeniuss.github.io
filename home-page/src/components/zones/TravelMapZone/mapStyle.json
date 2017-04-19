@@ -184,7 +184,16 @@
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#2ea2a2"
+                "color": "#396666"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off" 
             }
         ]
     }

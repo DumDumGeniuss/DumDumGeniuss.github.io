@@ -33,6 +33,7 @@
 }
 
 .contentTitle {
+	padding: 10px;
 	font-size: 3em;
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;

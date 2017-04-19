@@ -1,0 +1,50 @@
+.invisible {
+	display: none;
+}
+
+.mainZone {
+	position: relative;
+}
+
+.locationCircle {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: #8a0c0c;
+	border: 1px solid white;
+	cursor: pointer;
+	transition: all 1s linear;
+}
+
+.locationCircleShow {
+	background-color: yellow;
+}
+
+.squareZone {
+	position: absolute;
+	left: 15px;
+	transform: translate(0%, -50%);
+	width: 100px;
+	height: 30px;
+	background-color: #8a0c0c;
+	border: 1px solid white;
+	border-radius: 5px;
+	overflow: hidden;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	animation: showSquare 0.2s linear;
+}
+
+@keyframes showSquare {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	100% {
+		width: 100px;
+		height: 30px;
+	}
+}

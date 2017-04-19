@@ -11,7 +11,7 @@
 	height: 100%;
 }
 
-.cardsZone {
+.cardsRight {
 	display: inline-block;
 	background-color: #282828;
 	width: 300px;
@@ -20,10 +20,25 @@
 }
 
 .cardsZoneTitle {
-	padding: 30px;
+	height: 100px;
 	text-align: center;
 	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 2em;
 	background-color: #282828;
+}
+
+.cardsZone {
+	overflow: scroll;
+	width: 300px;
+	height: calc(100% - 100px);
+}
+
+@media only screen and  (max-width: 600px) {
+	.mapZone {
+		width: 100%;
+	}
+	.cardsRight {
+		display: none;
+	}
 }
