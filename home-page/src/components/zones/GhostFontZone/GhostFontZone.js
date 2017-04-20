@@ -40,7 +40,6 @@ const wordsGroups = [
 class GhostFontZone extends React.Component {
 	static get propTypes() {
 		return {
-			id: React.PropTypes.string,
 			width: React.PropTypes.number,
 			widthUnit: React.PropTypes.string,
 			height: React.PropTypes.number,
@@ -75,7 +74,7 @@ class GhostFontZone extends React.Component {
 			backgroundColor: this.props.backgroundColor
 		}
 		return (
-			<div id={this.props.id} style={zoneSize} className={style.mainZone}>
+			<div style={zoneSize} className={style.mainZone}>
 				<GhostFont 
 					words={wordsGroup.japanese}
 					fontSize={'6em'}

@@ -60,7 +60,7 @@ class SocialIconsZone extends React.Component {
 						onMouseLeave={this.hideSocialModal.bind(this, 'showGithub')}
 						type={'github'}
 						link={'https://github.com/DumDumGeniuss'}
-						backgroundColor={'white'}
+						backgroundColor={'#cecece'}
 						color={'black'}
 					/>
 					<Social

@@ -26,7 +26,7 @@ const fakeCities = [
 	{
 		country: 'Singapore',
 		rank: '3nd',
-		name: 'Shanghai',
+		name: 'Singapore',
 		show: false,
 		lat: 1.290270,
 		lng: 103.851959
@@ -60,7 +60,6 @@ const fakeCities = [
 class TravelMapZone extends React.Component {
 	static get propTypes() {
 		return {
-			id: React.PropTypes.string,
 			width: React.PropTypes.number,
 			widthUnit: React.PropTypes.string,
 			height: React.PropTypes.number,
@@ -75,6 +74,7 @@ class TravelMapZone extends React.Component {
 			defaultMapCenter: {lat: 28.5, lng: 128},
 			mapCenter: {lat: 28.5, lng: 128},
 			mapOptions: {
+				disableDoubleClickZoom: true,
 				scrollwheel: false,
 			    panControl: false,
 			    zoomControl: false,
@@ -148,7 +148,7 @@ class TravelMapZone extends React.Component {
 			backgroundColor: this.props.backgroundColor
 		}
 		return (
-			<div id={this.props.id} style={zoneSize} className={style.mainZone}>
+			<div style={zoneSize} className={style.mainZone}>
 				<div className={style.mapZone}>
 					<GoogleMapReact
 						bootstrapURLKeys={{key: 'AIzaSyCtDzC6MrTnBK-OE4yaVTKwuczLDIGyvk8'}}
