@@ -1,6 +1,7 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
 var path = require('path');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
   context: path.join(__dirname),
@@ -18,13 +19,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules'
+        loader: 'style-loader!css-loader?modules!postcss-loader'
       },
       {
         test: /\.json$/,
         loader: 'json-loader'
       }
     ]
+  },
+  postcss: function () {
+    return [autoprefixer];
   },
   output: {
     path: path.join(__dirname),
@@ -33,6 +37,6 @@ module.exports = {
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false })
   ],
 };

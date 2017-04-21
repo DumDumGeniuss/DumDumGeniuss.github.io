@@ -90,6 +90,8 @@
 }
 
 .aka {
+	top: 50%;
+	left: 50%;
 	animation: akaAnime 1.5s;
 }
 
@@ -384,8 +386,8 @@
 
 @keyframes akaAnime {
 	0% {
-		top: calc(50%);
-		left: calc(50%);
+		top: 50%;
+		left: 50%;
 		transform: translate3d(-50%, -50%, 0)
 	}
 	13% {
@@ -399,22 +401,22 @@
 		transform: translate3d(-50%, -50%, 0)
 	}
 	46% {
-		top: calc(50%);
-		left: calc(50%);
+		top: 50%;
+		left: 50%;
 		transform: translate3d(-50%, -50%, 0)
 	}
 	67% {
-		top: calc(50%);
-		left: calc(50%);
+		top: 50%;
+		left: 50%;
 		transform: translate3d(-50%, -50%, 0)
 	}
 	86.7% {
-		top: calc(50%);
-		left: calc(50%);
+		top: 50%;
+		left: 50%;
 		transform: translate3d(-50%, -50%, 0)
 	}
 	100% {
-		top: calc(50%);
+		top: 50%;
 		left: calc(100% + 500px);
 	}
 }
