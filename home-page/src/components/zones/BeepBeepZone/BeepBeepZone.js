@@ -27,8 +27,10 @@ class BeepBeepZone extends React.Component {
 			showAka: false,
 			showNickName: false,
 			showSpecialty: false,
-			showSpecialtyLeft: false,
-			showSpecialtyRight: false,
+			showSpecialtyOne: false,
+			showSpecialtyTwo: false,
+			showSpecialtyThree: false,
+			showSpecialtyFour: false,
 		};
 		this.playBeepBeep = this.playBeepBeep.bind(this);
 		this.swtichShowFonts = this.swtichShowFonts.bind(this);
@@ -38,7 +40,7 @@ class BeepBeepZone extends React.Component {
 		self.playBeepBeep();
 		this.playBeepBeepInterval = setInterval( () => {
 			self.playBeepBeep();
-		}, 10000);
+		}, 10500);
 	}
 	playBeepBeep() {
 		const self = this;
@@ -66,23 +68,29 @@ class BeepBeepZone extends React.Component {
 		self.swtichShowFonts(3000, 'showMyNameIsChi', true);
 		self.swtichShowFonts(5000, 'showMyNameIsChi', false);
 
-		self.swtichShowFonts(4600, 'showMyName', true);
-		self.swtichShowFonts(6600, 'showMyName', false);
+		self.swtichShowFonts(4500, 'showMyName', true);
+		self.swtichShowFonts(6500, 'showMyName', false);
 
-		self.swtichShowFonts(5100, 'showAka', true);
-		self.swtichShowFonts(6600, 'showAka', false);
+		self.swtichShowFonts(5000, 'showAka', true);
+		self.swtichShowFonts(6500, 'showAka', false);
 
-		self.swtichShowFonts(5600, 'showNickName', true);
-		self.swtichShowFonts(6600, 'showNickName', false);
+		self.swtichShowFonts(5500, 'showNickName', true);
+		self.swtichShowFonts(6500, 'showNickName', false);
 
-		self.swtichShowFonts(7100, 'showSpecialty', true);
-		self.swtichShowFonts(9600, 'showSpecialty', false);
+		self.swtichShowFonts(7000, 'showSpecialty', true);
+		self.swtichShowFonts(8500, 'showSpecialty', false);
 
-		self.swtichShowFonts(8100, 'showSpecialtyLeft', true);
-		self.swtichShowFonts(9600, 'showSpecialtyLeft', false);
+		self.swtichShowFonts(7500, 'showSpecialtyOne', true);
+		self.swtichShowFonts(9000, 'showSpecialtyOne', false);
 
-		self.swtichShowFonts(8100, 'showSpecialtyRight', true);
-		self.swtichShowFonts(9600, 'showSpecialtyRight', false);
+		self.swtichShowFonts(8000, 'showSpecialtyTwo', true);
+		self.swtichShowFonts(9500, 'showSpecialtyTwo', false);
+
+		self.swtichShowFonts(8500, 'showSpecialtyThree', true);
+		self.swtichShowFonts(10000, 'showSpecialtyThree', false);
+
+		self.swtichShowFonts(9000, 'showSpecialtyFour', true);
+		self.swtichShowFonts(10500, 'showSpecialtyFour', false);
 	}
 	swtichShowFonts(time, state, isOn) {
 		const self = this;
@@ -92,6 +100,14 @@ class BeepBeepZone extends React.Component {
 			self.setState(newState);
 		}, time);
 	}
+				// <div className={specialyLeftClass}>
+				// 	<span><b>Programming</b></span>
+				// 	<span><b>Multiple Langauges</b></span>
+				// </div>
+				// <div className={specialyRightClass}>
+				// 	<span><b>Painting</b></span>
+				// 	<span><b>Telling joke</b></span>
+				// </div>
 	render() {
 		const zoneSize = {
 			width: this.props.width + this.props.widthUnit,
@@ -106,12 +122,14 @@ class BeepBeepZone extends React.Component {
 		const myNameIsSpanClass = this.state.showMyNameIsSpan ? style.myNameIsSpan + ' ' + style.myNameIs : style.invisible;
 		const myNameIsJpnClass = this.state.showMyNameIsJpn ? style.myNameIsJpn + ' ' + style.myNameIs : style.invisible;
 		const myNameIsChiClass = this.state.showMyNameIsChi ? style.myNameIsChi + ' ' + style.myNameIs : style.invisible;
-		const myNameClass = this.state.showMyName ? style.myName : style.invisible;
-		const akaClass = this.state.showAka ? style.aka : style.invisible;
-		const nickNameClass = this.state.showNickName ? style.nickName : style.invisible;
-		const specialtyClass = this.state.showSpecialty ? style.specialty : style.invisible;
-		const specialyLeftClass = this.state.showSpecialtyLeft ? style.specialyLeft : style.invisible;
-		const specialyRightClass = this.state.showSpecialtyRight ? style.specialyRight : style.invisible;
+		const myNameClass = this.state.showMyName ? style.myName + ' ' + style.name : style.invisible;
+		const akaClass = this.state.showAka ? style.aka + ' ' + style.name : style.invisible;
+		const nickNameClass = this.state.showNickName ? style.nickName + ' ' + style.name : style.invisible;
+		const specialtyClass = this.state.showSpecialty ? style.specialty + ' ' + style.specialtyCommon : style.invisible;
+		const specialtyOneClass = this.state.showSpecialtyOne ? style.specialtyOne + ' ' + style.specialtyCommon : style.invisible;
+		const specialtyTwoClass = this.state.showSpecialtyTwo ? style.specialtyTwo + ' ' + style.specialtyCommon : style.invisible;
+		const specialtyThreeClass = this.state.showSpecialtyThree ? style.specialtyThree + ' ' + style.specialtyCommon : style.invisible;
+		const specialtyFourClass = this.state.showSpecialtyFour ? style.specialtyFour + ' ' + style.specialtyCommon : style.invisible;
 
 		return (
 			<div style={zoneSize} className={style.mainZone}>
@@ -126,24 +144,12 @@ class BeepBeepZone extends React.Component {
 				<span className={nickNameClass}><b>DumDumGenius</b></span>
 				<span className={akaClass}><b>AKA</b></span>
 				<span className={myNameClass}><b>Messi Yang</b></span>
-				<div className={specialtyClass}>
-					<span><b>S</b></span>
-					<span><b>P</b></span>
-					<span><b>E</b></span>
-					<span><b>C</b></span>
-					<span><b>I</b></span>
-					<span><b>A</b></span>
-					<span><b>L</b></span>
-					<span><b>T</b></span>
-					<span><b>Y</b></span>
-				</div>
-				<div className={specialyLeftClass}>
-					<span><b>Programming</b></span>
-					<span><b>Multiple Langauges</b></span>
-				</div>
-				<div className={specialyRightClass}>
-					<span><b>Painting</b></span>
-					<span><b>Telling joke</b></span>
+				<div className={style.specialtyZone}>
+					<span className={specialtyClass}><b>Specialty</b></span>
+					<span className={specialtyOneClass}><b>Coding</b></span>
+					<span className={specialtyTwoClass}><b>Painting</b></span>
+					<span className={specialtyThreeClass}><b>Linguist</b></span>
+					<span className={specialtyFourClass}><b>Joking</b></span>
 				</div>
 			</div>
 		);

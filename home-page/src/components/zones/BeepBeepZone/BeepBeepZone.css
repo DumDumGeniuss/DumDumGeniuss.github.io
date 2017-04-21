@@ -73,7 +73,7 @@
 	animation: myNameIsAnimeChi 2s;
 }
 
-.myName {
+.name {
 	position: absolute;
 	font-size: 4em;
 	width: 1000px;
@@ -83,77 +83,72 @@
 	background-color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
 	transform: translate3d(-50%, -50%, 0px);
+}
+
+.myName {
 	animation: myNameAnime 2s;
 }
 
 .aka {
-	position: absolute;
-	font-size: 4em;
-	width: 1000px;
-	height: 80px;
-	line-height: 80px;
-	text-align: center;
-	background-color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
-	transform: translate3d(-50%, -50%, 0px);
 	animation: akaAnime 1.5s;
 }
 
 .nickName {
-	position: absolute;
-	font-size: 4em;
-	width: 1000px;
-	height: 80px;
-	line-height: 80px;
-	text-align: center;
-	background-color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
-	transform: translate3d(-50%, -50%, 0px);
 	animation: nickNameAnime 1s;
 }
 
-.specialty {
+.specialtyZone {
 	position: absolute;
-	display: inline-flex;
-	justify-content: space-around;
+	display: inline-block;
+	width: 800px;
+	height: 800px;
+	left: calc(50% - 400px);
+	top: calc(50% - 400px);
+	transform: translate3d(0, 0, -100px) rotateY(-45deg);
+	transform-style: preserve-3d;
+}
+
+.specialtyCommon {
+	position: absolute;
+	display: inline-block;
 	font-size: 4em;
 	height: 80px;
-	left: 50%;
 	line-height: 80px;
-	background-color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
-	transform: translate3d(-50%, -50%, 0px);
-	animation: specialtyAnime 2.5s;
 }
 
-.specialyLeft {
-	position: absolute;
-	display: inline-flex;
-	justify-content: space-around;
-	flex-direction: column;
-	align-items: center;
-	font-size: 4em;
-	top: 5%;
-	width: 800px;
-	height: 80%;
-	font-family: 'Open Sans Condensed', sans-serif;
-	transform: translate3d(-50%, 0, 0px);
-	animation: specialyLeftAnime 1.5s linear;
+.specialty {
+	top: calc(50%);
+	left: 50%;
+	animation: specialtyAnime 1.5s;
 }
 
-.specialyRight {
-	position: absolute;
-	display: inline-flex;
-	justify-content: space-around;
-	flex-direction: column;
-	align-items: center;
-	font-size: 4em;
-	top: 25%;
-	width: 800px;
-	height: 80%;
-	font-family: 'Open Sans Condensed', sans-serif;
-	transform: translate3d(-50%, 0, 0px);
-	animation: specialyRightAnime 1.5s linear;
+.specialtyOne {
+	top: calc(50% - 80px);
+	right: 50%;
+	transform-origin: 100% 50%;
+	transform: rotateY(90deg);
+	animation: specialtyAnime 1.5s;
+}
+
+.specialtyTwo {
+	top: calc(50% + 80px);
+	right: 50%;
+	transform-origin: 100% 50%;
+	transform: rotateY(90deg);
+	animation: specialtyAnime 1.5s;
+}
+
+.specialtyThree {
+	top: calc(50% - 200px);
+	left: 50%;
+	animation: specialtyAnime 1.5s;
+}
+
+.specialtyFour {
+	top: calc(50%);
+	left: 50%;
+	animation: specialtyAnime 1.5s;
 }
 
 @keyframes helloEngAnime {
@@ -453,58 +448,15 @@
 
 @keyframes specialtyAnime {
 	0% {
-		top: 50%;
-		width: 2000px;
+		padding: 0 500px;
 	}
-	20% {
-		top: 50%;
-		width: 200px;
+	15% {
+		padding: 0 0;
 	}
-	30% {
-		top: 50px;
-	}
-	95% {
-		top: 50px;
+	85% {
+		padding: 0 0;
 	}
 	100% {
-		top: -120px;
-		width: 200px;
-	}
-
-}
-
-@keyframes specialyLeftAnime {
-	0% {
-		left: -400px;
-	}
-	16% {
-		left: 50%;
-	}
-	33% {
-		left: 50%;
-	}
-	94% {
-		left: 50%;
-	}
-	100% {
-		left: calc(100% + 400px);
-	}
-}
-
-@keyframes specialyRightAnime {
-	0% {
-		left: calc(100% + 400px);
-	}
-	16% {
-		left: 50%;
-	}
-	33% {
-		left: 50%;
-	}
-	94% {
-		left: 50%;
-	}
-	100% {
-		left: -400px;
+		padding: 0 500px;
 	}
 }
