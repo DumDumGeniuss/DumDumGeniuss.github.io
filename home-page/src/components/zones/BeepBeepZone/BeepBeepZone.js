@@ -45,52 +45,52 @@ class BeepBeepZone extends React.Component {
 	playBeepBeep() {
 		const self = this;
 		self.swtichShowFonts(1000, 'showHelloEng', true);
-		self.swtichShowFonts(2500, 'showHelloEng', false);
+		self.swtichShowFonts(3000, 'showHelloEng', false);
 
 		self.swtichShowFonts(1000, 'showHelloJpn', true);
-		self.swtichShowFonts(2500, 'showHelloJpn', false);
+		self.swtichShowFonts(3000, 'showHelloJpn', false);
 
 		self.swtichShowFonts(1000, 'showHelloSpan', true);
-		self.swtichShowFonts(2500, 'showHelloSpan', false);
+		self.swtichShowFonts(3000, 'showHelloSpan', false);
 
 		self.swtichShowFonts(1000, 'showHelloChi', true);
-		self.swtichShowFonts(2500, 'showHelloChi', false);
+		self.swtichShowFonts(3000, 'showHelloChi', false);
 
-		self.swtichShowFonts(3000, 'showMyNameIsEng', true);
-		self.swtichShowFonts(5000, 'showMyNameIsEng', false);
+		self.swtichShowFonts(3500, 'showMyNameIsEng', true);
+		self.swtichShowFonts(6000, 'showMyNameIsEng', false);
 
-		self.swtichShowFonts(3000, 'showMyNameIsSpan', true);
-		self.swtichShowFonts(5000, 'showMyNameIsSpan', false);
+		self.swtichShowFonts(3500, 'showMyNameIsSpan', true);
+		self.swtichShowFonts(6000, 'showMyNameIsSpan', false);
 
-		self.swtichShowFonts(3000, 'showMyNameIsJpn', true);
-		self.swtichShowFonts(5000, 'showMyNameIsJpn', false);
+		self.swtichShowFonts(3500, 'showMyNameIsJpn', true);
+		self.swtichShowFonts(6000, 'showMyNameIsJpn', false);
 
-		self.swtichShowFonts(3000, 'showMyNameIsChi', true);
-		self.swtichShowFonts(5000, 'showMyNameIsChi', false);
+		self.swtichShowFonts(3500, 'showMyNameIsChi', true);
+		self.swtichShowFonts(6000, 'showMyNameIsChi', false);
 
-		self.swtichShowFonts(4500, 'showMyName', true);
-		self.swtichShowFonts(6500, 'showMyName', false);
+		self.swtichShowFonts(5500, 'showMyName', true);
+		self.swtichShowFonts(7500, 'showMyName', false);
 
-		self.swtichShowFonts(5000, 'showAka', true);
-		self.swtichShowFonts(6500, 'showAka', false);
+		self.swtichShowFonts(5500, 'showAka', true);
+		self.swtichShowFonts(7500, 'showAka', false);
 
 		self.swtichShowFonts(5500, 'showNickName', true);
-		self.swtichShowFonts(6500, 'showNickName', false);
+		self.swtichShowFonts(7500, 'showNickName', false);
 
-		self.swtichShowFonts(7000, 'showSpecialty', true);
-		self.swtichShowFonts(8500, 'showSpecialty', false);
+		self.swtichShowFonts(8000, 'showSpecialty', true);
+		self.swtichShowFonts(9500, 'showSpecialty', false);
 
-		self.swtichShowFonts(7500, 'showSpecialtyOne', true);
-		self.swtichShowFonts(9000, 'showSpecialtyOne', false);
+		self.swtichShowFonts(8500, 'showSpecialtyOne', true);
+		self.swtichShowFonts(10000, 'showSpecialtyOne', false);
 
-		self.swtichShowFonts(8000, 'showSpecialtyTwo', true);
-		self.swtichShowFonts(9500, 'showSpecialtyTwo', false);
+		self.swtichShowFonts(9000, 'showSpecialtyTwo', true);
+		self.swtichShowFonts(10500, 'showSpecialtyTwo', false);
 
-		self.swtichShowFonts(8500, 'showSpecialtyThree', true);
-		self.swtichShowFonts(10000, 'showSpecialtyThree', false);
+		self.swtichShowFonts(9500, 'showSpecialtyThree', true);
+		self.swtichShowFonts(11000, 'showSpecialtyThree', false);
 
-		self.swtichShowFonts(9000, 'showSpecialtyFour', true);
-		self.swtichShowFonts(10500, 'showSpecialtyFour', false);
+		self.swtichShowFonts(10000, 'showSpecialtyFour', true);
+		self.swtichShowFonts(11500, 'showSpecialtyFour', false);
 	}
 	swtichShowFonts(time, state, isOn) {
 		const self = this;
