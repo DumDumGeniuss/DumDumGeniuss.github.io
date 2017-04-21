@@ -344,109 +344,109 @@
 
 @keyframes myNameAnime {
 	0% {
-		top: calc(50%);
-		left: calc(50%);
-		transform: translate3d(-50%, -50%, -3000px);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
+		transform: translateZ(-3000px);
 	}
 	10% {
-		transform: translate3d(-50%, -50%, 0);
+		transform: translateZ(0);
 	}
 	25% {
-		top: calc(50%);
-		left: calc(50%);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
 	}
 	35% {
-		top: calc(50% - 40px);
-		left: calc(50% - 70px);
+		top: calc(50% - 80px);
+		left: calc(50% - 570px);
 	}
 	50% {
-		top: calc(50% - 40px);
-		left: calc(50% - 70px);
+		top: calc(50% - 80px);
+		left: calc(50% - 570px);
 	}
 	60% {
-		top: calc(50% - 80px);
-		left: calc(50% - 140px);
+		top: calc(50% - 120px);
+		left: calc(50% - 640px);
 	}
 	90% {
-		top: calc(50% - 80px);
-		left: calc(50% - 140px);
+		top: calc(50% - 120px);
+		left: calc(50% - 640px);
 	}
 	100% {
-		top: calc(50% - 80px);
-		left: -500px;
-		transform: translate3d(-50%, -50%, 0);
+		top: calc(50% - 120px);
+		left: -1000px;
+		transform: translateZ(0);
 	}
 }
 
 @keyframes akaAnime {
 	0% {
-		top: calc(50%);
-		left: calc(50%);
-		transform: translate3d(-50%, -50%, -3000px);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
+		transform: translateZ(-3000px);
 	}
 	10% {
-		transform: translate3d(-50%, -50%, 0);
+		transform: translateZ(0);
 	}
 	25% {
-		top: calc(50%);
-		left: calc(50%);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
 	}
 	35% {
-		top: calc(50% + 40px);
-		left: calc(50% + 70px);
+		top: calc(50%);
+		left: calc(50% - 430px);
 	}
 	50% {
-		top: calc(50% + 40px);
-		left: calc(50% + 70px);
+		top: calc(50%);
+		left: calc(50% - 430px);
 	}
 	60% {
-		top: calc(50%);
-		left: calc(50%);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
 	}
 	90% {
-		top: calc(50%);
-		left: calc(50%);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
 	}
 	100% {
-		top: calc(50%);
-		left: calc(100% + 500px);
-		transform: translate3d(-50%, -50%, 0);
+		top: calc(50% - 40px);
+		left: calc(100%);
+		transform: translateZ(0);
 	}
 }
 
 @keyframes nickNameAnime {
 	0% {
-		top: calc(50%);
-		left: calc(50%);
-		transform: translate3d(-50%, -50%, -3000px);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
+		transform: translateZ(-3000px);
 	}
 	10% {
-		transform: translate3d(-50%, -50%, 0);
+		transform: translateZ(0);
 	}
 	25% {
-		top: calc(50%);
-		left: calc(50%);
+		top: calc(50% - 40px);
+		left: calc(50% - 500px);
 	}
 	35% {
-		top: calc(50% + 40px);
-		left: calc(50% + 70px);
+		top: calc(50%);
+		left: calc(50% - 430px);
 	}
 	50% {
-		top: calc(50% + 40px);
-		left: calc(50% + 70px);
+		top: calc(50%);
+		left: calc(50% - 430px);
 	}
 	60% {
-		top: calc(50% + 80px);
-		left: calc(50% + 140px);
+		top: calc(50% + 40px);
+		left: calc(50% - 360px);
 	}
 	90% {
-		top: calc(50% + 80px);
-		left: calc(50% + 140px);
+		top: calc(50% + 40px);
+		left: calc(50% - 360px);
 	}
 	100% {
-		top: calc(50% + 80px);
-		left: calc(-500px);
-		transform: translate3d(-50%, -50%, 0);
+		top: calc(50% + 40px);
+		left: -1000px;
+		transform: translateZ(0);
 	}
 }
 
