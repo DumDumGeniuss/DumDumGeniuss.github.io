@@ -12,14 +12,14 @@
 	width: 16px;
 	height: 16px;
 	border-radius: 8px;
-	background-color: #8a0c0c;
+	background-color: #3b5998;
 	border: 1px solid white;
 	cursor: pointer;
-	transition: all 1s linear;
+	transition: all 0.2s linear;
 }
 
 .locationCircleShow {
-	background-color: yellow;
+	background-color: #e62117;
 }
 
 .squareZone {
@@ -28,7 +28,7 @@
 	transform: translate(0%, -50%);
 	width: 100px;
 	height: 30px;
-	background-color: #8a0c0c;
+	background-color: #e62117;
 	border: 1px solid white;
 	border-radius: 5px;
 	overflow: hidden;

@@ -1,6 +1,6 @@
 .mainZone {
 	/*background: linear-gradient(141deg, #2ea2a2 0%, #2fb7c5 51%, #48c0c3 75%);*/
-	background-color: #396666;
+	background-color: #abce83;
 	border-bottom: 1px solid #8a8a8a;
 	display: block;
 	position: relative;
@@ -12,7 +12,7 @@
 
 .mainZoneShow {
 	/*background: linear-gradient(141deg, #48c0c3 0%, #2fb7c5 51%, #2ea2a2 75%);*/
-	background-color: #669e9e;
+	background-color: #cbe2b0;
 }
 
 .titleWords {
@@ -55,7 +55,7 @@
 }
 
 .frontWords {
-	color: #acacac;
+	color: white;
 	transform: rotateX(0deg);
 }
 
