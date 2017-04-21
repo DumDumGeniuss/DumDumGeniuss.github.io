@@ -75,7 +75,7 @@ class SocialIconsZone extends React.Component {
 				<div className={style.modalsZone}>
 					<ElegantModal 
 						grow={this.state.showMedium}
-						borderColor={'#0be370'}
+						borderColor={'#3d8a61'}
 						backgroundColor={'#37b773'}
 						color={'white'}
 						title={'Medium'}
@@ -92,7 +92,7 @@ class SocialIconsZone extends React.Component {
 					/>
 					<ElegantModal 
 						grow={this.state.showGithub}
-						borderColor={'white'}
+						borderColor={'#454545'}
 						backgroundColor={'#bfbfbf'}
 						color={'white'}
 						title={'Github'}
@@ -100,7 +100,7 @@ class SocialIconsZone extends React.Component {
 					/>
 					<ElegantModal 
 						grow={this.state.showYoutube}
-						borderColor={'#e62117'}
+						borderColor={'#a5241d'}
 						backgroundColor={'#e86e68'}
 						color={'white'}
 						title={'Youtube'}

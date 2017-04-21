@@ -18,6 +18,14 @@ class HomePage extends React.Component {
 	}
 	componentWillUnmount() {
 	}
+				// <GhostFontZone
+				// 	ref={'firstZone'}
+				// 	width={100}
+				// 	widthUnit={'%'}
+				// 	height={100}
+				// 	heightUnit={'vh'}
+				// 	backgroundColor={'#1f1f1f'}
+				// />
 	render() {
 		return (
 			<div className={style.mainZone}>
@@ -28,14 +36,6 @@ class HomePage extends React.Component {
 					height={100}
 					heightUnit={'vh'}
 					backgroundColor={'white'}
-				/>
-				<GhostFontZone
-					ref={'firstZone'}
-					width={100}
-					widthUnit={'%'}
-					height={100}
-					heightUnit={'vh'}
-					backgroundColor={'#1f1f1f'}
 				/>
 				<SocialIconsZone />
 				<TravelMapZone

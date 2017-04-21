@@ -40,7 +40,7 @@ class BeepBeepZone extends React.Component {
 		self.playBeepBeep();
 		this.playBeepBeepInterval = setInterval( () => {
 			self.playBeepBeep();
-		}, 10500);
+		}, 11000);
 	}
 	playBeepBeep() {
 		const self = this;

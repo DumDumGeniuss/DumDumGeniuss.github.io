@@ -35,31 +35,35 @@ class ElegantModal extends React.Component {
 	}
 	render() {
 		const mainZoneClass = this.props.grow ? style.mainZone + ' ' + style.mainZoneGrow : style.mainZone;
-		const horizontalLineClass = this.props.grow ? style.horizontalLine + ' ' + style.horizontalLineGrow : style.horizontalLine;
+		const horizontalUpperLineClass = this.props.grow ? style.horizontalLine + ' ' + style.horizontalUpperLineGrow : style.horizontalLine;
+		const horizontalButtomLineClass = this.props.grow ? style.horizontalLine + ' ' + style.horizontalButtomLineGrow : style.horizontalLine;
 		const verticalLineClass = this.props.grow ? style.verticalLine + ' ' + style.verticalLineGrow : style.verticalLine;
-		const quarterCircleClass = this.props.grow ? style.quarterCircle + ' ' + style.quarterCircleGrow : style.quarterCircle;
+		const quarterLeftUpperCircleClass = this.props.grow ? style.quarterCircle + ' ' + style.quarterLeftUpperCircleGrow : style.quarterCircle;
+		const quarterRightUpperCircleClass = this.props.grow ? style.quarterCircle + ' ' + style.quarterRightUpperCircleGrow : style.quarterCircle;
+		const quarterLeftButtomCircleClass = this.props.grow ? style.quarterCircle + ' ' + style.quarterLeftButtomCircleGrow : style.quarterCircle;
+		const quartetRightButtomCircleClass = this.props.grow ? style.quarterCircle + ' ' + style.quarterRightButtomCircleGrow : style.quarterCircle;
 		const contentZoneClass = this.props.grow ? style.contentZone + ' ' + style.contentZoneGrow : style.contentZone;
 
 		return (
 			<div onClick={this._onClick.bind(this)} className={mainZoneClass}>
 				<div className={style.borderZone}>
-					<div style={ {...this.basicLineStyle, top: 0, right: '50%'} } className={horizontalLineClass} />
-					<div style={ {...this.basicLineStyle, top: 0, left: '50%',} } className={horizontalLineClass} />
-					<div style={ {...this.basicLineStyle, bottom: 0, right: '50%'} } className={horizontalLineClass} />
-					<div style={ {...this.basicLineStyle, bottom: 0, left: '50%',} } className={horizontalLineClass} />
+					<div style={ {...this.basicLineStyle, top: 0, right: '50%'} } className={horizontalUpperLineClass} />
+					<div style={ {...this.basicLineStyle, top: 0, left: '50%',} } className={horizontalUpperLineClass} />
+					<div style={ {...this.basicLineStyle, bottom: 0, right: '5%'} } className={horizontalButtomLineClass} />
+					<div style={ {...this.basicLineStyle, bottom: 0, left: '5%',} } className={horizontalButtomLineClass} />
 					<div style={ {...this.basicLineStyle, top: '5%', left: 0} } className={verticalLineClass} />
 					<div style={ {...this.basicLineStyle, top: '5%', right: 0} } className={verticalLineClass} />
 					<div style={ {left: 0, top: 0} } className={style.circularSection}>
-						<div style={ {...this.basicCircleStyle} } className={quarterCircleClass}></div>
+						<div style={ {...this.basicCircleStyle} } className={quarterLeftUpperCircleClass}></div>
 					</div>
 					<div style={ {left: 0, bottom: 0, transform: 'rotate(-90deg)'} } className={style.circularSection}>
-						<div style={ {...this.basicCircleStyle} } className={quarterCircleClass}></div>
+						<div style={ {...this.basicCircleStyle} } className={quarterLeftButtomCircleClass}></div>
 					</div>
 					<div style={ {right: 0, bottom: 0, transform: 'rotate(-180deg)'} } className={style.circularSection}>
-						<div style={ {...this.basicCircleStyle} } className={quarterCircleClass}></div>
+						<div style={ {...this.basicCircleStyle} } className={quartetRightButtomCircleClass}></div>
 					</div>
 					<div style={ {right: 0, top: 0, transform: 'rotate(-270deg)'} } className={style.circularSection}>
-						<div style={ {...this.basicCircleStyle} } className={quarterCircleClass}></div>
+						<div style={ {...this.basicCircleStyle} } className={quarterRightUpperCircleClass}></div>
 					</div>
 				</div>
 				<div style={this.contentZoneStyle} className={contentZoneClass}>

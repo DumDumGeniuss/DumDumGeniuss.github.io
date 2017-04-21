@@ -106,7 +106,7 @@
 	height: 800px;
 	left: calc(50% - 400px);
 	top: calc(50% - 400px);
-	transform: translate3d(0, 0, -100px) rotateY(-45deg);
+	transform: translate3d(0, 0, -100px) rotateY(-30deg);
 	transform-style: preserve-3d;
 }
 
@@ -129,7 +129,7 @@
 	top: calc(50% - 80px);
 	right: 50%;
 	transform-origin: 100% 50%;
-	transform: rotateY(90deg);
+	transform: rotateY(60deg);
 	animation: specialtyAnime 1.5s;
 }
 
@@ -137,7 +137,7 @@
 	top: calc(50% + 80px);
 	right: 50%;
 	transform-origin: 100% 50%;
-	transform: rotateY(90deg);
+	transform: rotateY(60deg);
 	animation: specialtyAnime 1.5s;
 }
 

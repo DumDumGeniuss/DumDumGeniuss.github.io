@@ -28,8 +28,8 @@
 }
 
 .contentZone.contentZoneGrow {
-	opacity: 0.95;
-	animation: fade-in 0.8s linear;
+	opacity: 1;
+	animation: fade-in 0.5s linear;
 }
 
 .contentTitle {
@@ -54,7 +54,7 @@
 		opacity: 0;
 	}
 	100% {
-		opacity: 0.95;
+		opacity: 1;
 	}
 }
 
@@ -76,14 +76,80 @@
 	transition: all 1s;
 }
 
-.quarterCircle.quarterCircleGrow {
+.quarterCircle.quarterLeftUpperCircleGrow {
 	transform: rotate(0deg);
-	animation: grow-circle 0.4s linear;
+	animation: grow-left-upper-circle 0.4s linear;
 }
 
-@keyframes grow-circle {
+.quarterCircle.quarterRightUpperCircleGrow {
+	transform: rotate(0deg);
+	animation: grow-right-upper-circle 0.4s linear;
+}
+
+.quarterCircle.quarterLeftButtomCircleGrow {
+	transform: rotate(0deg);
+	animation: grow-left-buttom-circle 0.4s linear;
+}
+
+.quarterCircle.quarterRightButtomCircleGrow {
+	transform: rotate(0deg);
+	animation: grow-right-buttom-circle 0.4s linear;
+}
+
+@keyframes grow-left-upper-circle {
 	0% {
 		transform: rotate(90deg);
+	}
+	20% {
+		transform: rotate(90deg);
+	}
+	30% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes grow-right-upper-circle {
+	0% {
+		transform: rotate(-90deg);
+	}
+	20% {
+		transform: rotate(-90deg);
+	}
+	30% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes grow-left-buttom-circle {
+	0% {
+		transform: rotate(90deg);
+	}
+	70% {
+		transform: rotate(90deg);
+	}
+	80% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes grow-right-buttom-circle {
+	0% {
+		transform: rotate(-90deg);
+	}
+	70% {
+		transform: rotate(-90deg);
+	}
+	80% {
+		transform: rotate(0deg);
 	}
 	100% {
 		transform: rotate(0deg);
@@ -97,13 +163,39 @@
 	transition: all 1s;
 }
 
-.horizontalLine.horizontalLineGrow {
+.horizontalLine.horizontalUpperLineGrow {
 	width: 45%;
-	animation: grow-horizontal-line 0.4s linear;
+	animation: grow-upper-horizontal-line 0.4s linear;
 }
 
-@keyframes grow-horizontal-line {
+.horizontalLine.horizontalButtomLineGrow {
+	width: 45%;
+	animation: grow-buttom-horizontal-line 0.4s linear;
+}
+
+@keyframes grow-upper-horizontal-line {
 	0% {
+		width: 0;
+	}
+	20% {
+		width: 45%;
+	}
+	100% {
+		width: 45%;
+	}
+}
+
+@keyframes grow-buttom-horizontal-line {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	79% {
+		opacity: 0;
+		width: 0;
+	}
+	80% {
+		opacity: 1;
 		width: 0;
 	}
 	100% {
@@ -114,7 +206,6 @@
 .verticalLine {
 	position: absolute;
 	height: 0;
-	transition: all 1s;
 }
 
 .verticalLine.verticalLineGrow {
@@ -124,7 +215,19 @@
 
 @keyframes grow-vertical-line {
 	0% {
+		opacity: 0;
 		height: 0;
+	}
+	29% {
+		opacity: 0;
+		height: 0;
+	}
+	30% {
+		opacity: 1;
+		height: 0;
+	}
+	70% {
+		height: 90%;
 	}
 	100% {
 		height: 90%;
@@ -135,12 +238,5 @@
 	.mainZone {
 		width: 250px;
 		height: 250px;
-	}
-	.contentTitle {
-		font-size: 2em;
-	}
-	
-	.contentWords {
-		font-size: 1em;
 	}
 }
