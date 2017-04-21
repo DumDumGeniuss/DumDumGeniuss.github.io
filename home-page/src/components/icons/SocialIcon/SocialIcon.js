@@ -5,6 +5,7 @@ import Medium from 'react-icons/lib/fa/medium';
 import Facebook from 'react-icons/lib/fa/facebook';
 import Github from 'react-icons/lib/fa/github-alt';
 import Youtube from 'react-icons/lib/fa/youtube';
+import Linkedin from 'react-icons/lib/fa/linkedin';
 
 class SocialIcon extends React.Component {
 	static get propTypes() {
@@ -26,7 +27,8 @@ class SocialIcon extends React.Component {
 			medium: <Medium />,
 			facebook: <Facebook />,
 			github: <Github />,
-			youtube: <Youtube />
+			youtube: <Youtube />,
+			linkedin: <Linkedin />
 		};
 	}
 	getIcon(type) {

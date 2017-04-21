@@ -18,7 +18,8 @@ class SocialIconsZone extends React.Component {
 			showFacebook: false,
 			showMedium: false,
 			showYoutube: false,
-			showGithub: false
+			showGithub: false,
+			showLinkedin: false,
 		};
 	}
 	showSocialModal(modalName, e) {
@@ -39,6 +40,14 @@ class SocialIconsZone extends React.Component {
 		return (
 			<div className={style.mainZone}>
 				<div className={style.iconsZone}>
+					<Social
+						onMouseEnter={this.showSocialModal.bind(this, 'showLinkedin')}
+						onMouseLeave={this.hideSocialModal.bind(this, 'showLinkedin')}
+						type={'linkedin'}
+						link={'https://www.linkedin.com/in/messi-yang-671987b7/'}
+						backgroundColor={'#0077B5'}
+						color={'white'}
+					/>
 					<Social
 						onMouseEnter={this.showSocialModal.bind(this, 'showMedium')}
 						onMouseLeave={this.hideSocialModal.bind(this, 'showMedium')}
@@ -73,6 +82,14 @@ class SocialIconsZone extends React.Component {
 					/>
 				</div>
 				<div className={style.modalsZone}>
+					<ElegantModal 
+						grow={this.state.showLinkedin}
+						borderColor={'#106794'}
+						backgroundColor={'#0077B5'}
+						color={'white'}
+						title={'Linkedin'}
+						content={'You\'re heading to dumdumgenius\' Linkedin page, you can see all my experience and my specialties here!'}
+					/>
 					<ElegantModal 
 						grow={this.state.showMedium}
 						borderColor={'#3d8a61'}

@@ -35,7 +35,7 @@ class HomePage extends React.Component {
 					widthUnit={'%'}
 					height={100}
 					heightUnit={'vh'}
-					backgroundColor={'white'}
+					backgroundColor={'black'}
 				/>
 				<SocialIconsZone />
 				<TravelMapZone

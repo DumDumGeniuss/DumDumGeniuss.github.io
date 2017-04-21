@@ -6,15 +6,17 @@
 	overflow: hidden;
 	position: relative;
 	perspective: 200px;
+	background-color: black;
 }
 
 .hello {
 	position: absolute;
 	font-size: 6em;
 	transform: rotateY(15deg);
-	background-color: white;
+	background-color: black;
 	width: 500px;
 	height: 120px;
+	color: white;
 	line-height: 120px;
 	text-align: center;
 	overflow: hidden;
@@ -46,6 +48,7 @@
 	font-size: 4em;
 	width: 500px;
 	height: 120px;
+	color: white;
 	line-height: 120px;
 	text-align: center;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -80,9 +83,10 @@
 	font-size: 4em;
 	width: 1000px;
 	height: 80px;
+	color: white;
 	line-height: 80px;
 	text-align: center;
-	background-color: white;
+	background-color: black;
 	font-family: 'Open Sans Condensed', sans-serif;
 	transform: translate3d(-50%, -50%, 0px);
 }
@@ -116,6 +120,7 @@
 	font-size: 5em;
 	height: 80px;
 	line-height: 80px;
+	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
