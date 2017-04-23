@@ -112,9 +112,11 @@ class TravelMapZone extends React.Component {
 		this.switchCity(index, false);
 	}
 	switchCity(index, isOn) {
-		this.state.cities[index].show = isOn;
-		this.setState({
-			cities: this.state.cities
+		this.setState( (state) => {
+			state.cities[index].show = isOn
+			return {
+				cities: state.cities
+			};
 		});
 	}
 	changeMapCenter(newMapCenter) {

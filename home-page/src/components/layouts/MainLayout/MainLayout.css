@@ -1,0 +1,17 @@
+.mainZone {
+	position: relative;
+}
+
+.navbar {
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 5;
+}
+
+.logo {
+	height: 100px;
+}

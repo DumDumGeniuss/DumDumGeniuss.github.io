@@ -29,9 +29,9 @@ class SocialIconsZone extends React.Component {
 		this.switchSocialModal(modalName, false);
 	}
 	switchSocialModal(modalName, isOn) {
-		const modal = {};
-		modal[modalName] = isOn;
-		this.setState(modal);
+		this.setState({
+			[modalName]: isOn
+		});
 	}
 	onModalClick(url, e) {
 		window.open(url, "_blank");

@@ -4,6 +4,7 @@ import GhostFontZone from '../../zones/GhostFontZone/GhostFontZone.js';
 import SocialIconsZone from '../../zones/SocialIconsZone/SocialIconsZone.js';
 import TravelMapZone from '../../zones/TravelMapZone/TravelMapZone.js';
 import BeepBeepZone from '../../zones/BeepBeepZone/BeepBeepZone.js';
+import MainLayout from '../../layouts/MainLayout/MainLayout.js';
 import style from './HomePage.css';
 
 class HomePage extends React.Component {
@@ -28,25 +29,27 @@ class HomePage extends React.Component {
 				// />
 	render() {
 		return (
-			<div className={style.mainZone}>
-				<BeepBeepZone
-					ref={'thirdZone'}
-					width={100}
-					widthUnit={'%'}
-					height={100}
-					heightUnit={'vh'}
-					backgroundColor={'black'}
-				/>
-				<SocialIconsZone />
-				<TravelMapZone
-					ref={'secondZone'}
-					width={100}
-					widthUnit={'%'}
-					height={100}
-					heightUnit={'vh'}
-					backgroundColor={'white'}
-				/>
-			</div>
+			<MainLayout>
+				<div className={style.mainZone}>
+					<BeepBeepZone
+						ref={'thirdZone'}
+						width={100}
+						widthUnit={'%'}
+						height={100}
+						heightUnit={'vh'}
+						backgroundColor={'black'}
+					/>
+					<SocialIconsZone />
+					<TravelMapZone
+						ref={'secondZone'}
+						width={100}
+						widthUnit={'%'}
+						height={100}
+						heightUnit={'vh'}
+						backgroundColor={'white'}
+					/>
+				</div>
+			</MainLayout>
 		);
 	}
 }
