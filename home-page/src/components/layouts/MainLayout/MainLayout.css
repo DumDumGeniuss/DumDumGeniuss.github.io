@@ -7,11 +7,21 @@
 	display: flex;
 	top: 0;
 	left: 0;
-	height: 100px;
+	height: 90px;
 	width: 100%;
 	z-index: 5;
+	/*background-color: orange;*/
+}
+
+.logoZone {
+	display: inline-flex;
+	height: 90px;
+	width: 90px;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo {
-	height: 100px;
+	height: 70px;
+	width: 70px;
 }

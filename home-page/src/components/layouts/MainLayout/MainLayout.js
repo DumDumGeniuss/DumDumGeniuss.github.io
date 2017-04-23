@@ -22,8 +22,8 @@ class MainLayout extends React.Component {
 		return (
 			<div className={style.mainZone}>
 				<navbar className={style.navbar}>
-					<figure>
-						<img className={style.logo} src='/home-page/dist/images/logo.png' />
+					<figure className={style.logoZone}>
+						<img className={style.logo} src={'https://dumdumgeniuss.github.io/home-page/dist/images/logo.png'} />
 					</figure>
 				</navbar>
 				{this.props.children}
