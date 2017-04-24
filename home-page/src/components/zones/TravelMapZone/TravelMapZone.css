@@ -1,6 +1,6 @@
 .mainZone {
 	overflow: hidden;
-	position: relative;
+	/*position: relative;*/
 	display: flex;
 }
 

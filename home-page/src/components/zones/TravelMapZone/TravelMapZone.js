@@ -64,7 +64,10 @@ class TravelMapZone extends React.Component {
 			widthUnit: React.PropTypes.string,
 			height: React.PropTypes.number,
 			heightUnit: React.PropTypes.string,
-			backgroundColor: React.PropTypes.string
+			backgroundColor: React.PropTypes.string,
+			position: React.PropTypes.string,
+			top: React.PropTypes.number,
+			topUnit: React.PropTypes.string,
 		};
 	}
 	constructor(props) {
@@ -147,8 +150,10 @@ class TravelMapZone extends React.Component {
 		const zoneSize = {
 			width: this.props.width + this.props.widthUnit,
 			height: this.props.height + this. props.heightUnit,
-			backgroundColor: this.props.backgroundColor
-		}
+			backgroundColor: this.props.backgroundColor,
+			position: this.props.position,
+			top: this.props.top + this.props.topUnit,
+		};
 		return (
 			<div style={zoneSize} className={style.mainZone}>
 				<div className={style.mapZone}>

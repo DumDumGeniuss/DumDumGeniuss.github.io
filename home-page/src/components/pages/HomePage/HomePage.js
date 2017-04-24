@@ -13,34 +13,31 @@ class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			currentLockZone: 0
 		};
-		this.currentLockPageY = 0;
-		this.lockZone = this.lockZone.bind(this);
+		this.totalZone = 3;
 	}
 	componentDidMount() {
-		window.addEventListener("scroll", this.lockZone);
 	}
 	componentWillUnmount() {
 	}
 	changeZone(isDown) {
-		const windowHeight = window.innerHeight;
-		const mainZoneHeight = ReactDOM.findDOMNode(this.refs.mainZone).clientHeight;
+		let nextZone;
 
 		if (isDown) {
-			this.currentLockPageY += windowHeight;
-			if (this.currentLockPageY >= mainZoneHeight) {
-				this.currentLockPageY = 0;
+			nextZone = this.state.currentLockZone + 1
+			if (nextZone === this.totalZone) {
+				nextZone = 0;
 			}
 		} else {
-			this.currentLockPageY -= windowHeight;
-			if (this.currentLockPageY < 0) {
-				this.currentLockPageY = mainZoneHeight - windowHeight;
+			nextZone = this.state.currentLockZone - 1
+			if (nextZone < 0) {
+				nextZone = this.totalZone - 1;
 			}
 		}
-		scrollTo(0, this.currentLockPageY);
-	}
-	lockZone () {
-		scrollTo(0, this.currentLockPageY);
+		this.setState({
+			currentLockZone: nextZone
+		});
 	}
 	render() {
 		return (
@@ -57,6 +54,9 @@ class HomePage extends React.Component {
 						height={100}
 						heightUnit={'vh'}
 						backgroundColor={'black'}
+						position={'absolute'}
+						top={this.state.currentLockZone === 0 ? 0 : 100}
+						topUnit={'%'}
 					/>
 					<SocialIconsZone />
 					<TravelMapZone
@@ -66,14 +66,9 @@ class HomePage extends React.Component {
 						height={100}
 						heightUnit={'vh'}
 						backgroundColor={'white'}
-					/>
-					<BeepBeepZone
-						ref={'thirdZone'}
-						width={100}
-						widthUnit={'%'}
-						height={100}
-						heightUnit={'vh'}
-						backgroundColor={'black'}
+						position={'absolute'}
+						top={this.state.currentLockZone === 1 ? 0 : 100}
+						topUnit={'%'}
 					/>
 				</div>
 			</MainLayout>

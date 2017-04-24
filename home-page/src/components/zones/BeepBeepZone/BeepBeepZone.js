@@ -9,7 +9,10 @@ class BeepBeepZone extends React.Component {
 			widthUnit: React.PropTypes.string,
 			height: React.PropTypes.number,
 			heightUnit: React.PropTypes.string,
-			backgroundColor: React.PropTypes.string
+			backgroundColor: React.PropTypes.string,
+			position: React.PropTypes.string,
+			top: React.PropTypes.number,
+			topUnit: React.PropTypes.string,
 		};
 	}
 	constructor(props) {
@@ -112,8 +115,10 @@ class BeepBeepZone extends React.Component {
 		const zoneSize = {
 			width: this.props.width + this.props.widthUnit,
 			height: this.props.height + this. props.heightUnit,
-			backgroundColor: this.props.backgroundColor
-		}
+			backgroundColor: this.props.backgroundColor,
+			position: this.props.position,
+			top: this.props.top + this.props.topUnit,
+		};
 		const helloEngClass = this.state.showHelloEng ? style.helloEng + ' ' + style.hello : style.invisible;
 		const helloSpanClass = this.state.showHelloSpan ? style.helloSpan + ' ' + style.hello : style.invisible;
 		const helloJpnClass = this.state.showHelloJpn ? style.helloJpn + ' ' + style.hello : style.invisible;
