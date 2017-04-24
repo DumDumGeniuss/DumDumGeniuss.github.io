@@ -15,7 +15,7 @@ class HomePage extends React.Component {
 		this.state = {
 			currentLockZone: 0
 		};
-		this.totalZone = 3;
+		this.totalZone = 2;
 	}
 	componentDidMount() {
 	}
