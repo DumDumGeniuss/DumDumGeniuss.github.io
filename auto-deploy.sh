@@ -1,5 +1,5 @@
 git add .
-git commit -m "make my website great again"
+git commit -m "$1"
 yarn deploy
 git checkout gh-pages
 git pull origin gh-pages
