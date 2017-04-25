@@ -1,0 +1,22 @@
+.SocialIcon-mainZone {
+	display: inline-flex;
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(0deg);
+	transition: all 1s;
+}
+
+.SocialIcon-mainZone.SocialIcon-mainZoneSpin {
+	transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 600px) {
+	.SocialIcon-mainZone {
+		width: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+}

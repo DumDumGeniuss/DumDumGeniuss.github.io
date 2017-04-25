@@ -1,0 +1,33 @@
+.SocialIconsZone-mainZone {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+
+.SocialIconsZone-iconsZone {
+	position: fixed;
+	display: inline-flex;
+    flex-direction: column;
+	left: 0;
+	bottom: 300px;
+	transform: translate(0, 50%);
+	color: white;
+}
+
+.SocialIconsZone-modalsZone {
+	position: fixed;
+	left: 50vw;
+	top: 50vh;
+	transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+	.SocialIconsZone-iconsZone {
+	    flex-direction: row;
+	    justify-content: space-around;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 0);
+	}
+}
