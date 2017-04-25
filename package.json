@@ -2,6 +2,7 @@
   "name": "create-react-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dumdumgeniuss.github.io/",
   "dependencies": {
     "google-map-react": "^0.24.0",
     "react": "^15.5.4",
@@ -15,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && gh-pages -d build"
   }
 }
