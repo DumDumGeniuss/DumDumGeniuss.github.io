@@ -81,7 +81,7 @@
 .BeepBeepZone-name {
 	position: absolute;
 	font-size: 4em;
-	width: 1000px;
+	width: 700px;
 	height: 80px;
 	color: white;
 	line-height: 80px;
@@ -351,7 +351,7 @@
 @keyframes myNameAnime {
 	0% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 		transform: translateZ(-3000px);
 	}
 	10% {
@@ -359,27 +359,27 @@
 	}
 	25% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 	}
 	35% {
 		top: calc(50% - 80px);
-		left: calc(50% - 570px);
+		left: calc(50% - 420px);
 	}
 	50% {
 		top: calc(50% - 80px);
-		left: calc(50% - 570px);
+		left: calc(50% - 420px);
 	}
 	60% {
 		top: calc(50% - 120px);
-		left: calc(50% - 640px);
+		left: calc(50% - 490px);
 	}
 	90% {
 		top: calc(50% - 120px);
-		left: calc(50% - 640px);
+		left: calc(50% - 490px);
 	}
 	100% {
 		top: calc(50% - 120px);
-		left: -1000px;
+		left: -700px;
 		transform: translateZ(0);
 	}
 }
@@ -387,7 +387,7 @@
 @keyframes akaAnime {
 	0% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 		transform: translateZ(-3000px);
 	}
 	10% {
@@ -395,23 +395,23 @@
 	}
 	25% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 	}
 	35% {
 		top: calc(50%);
-		left: calc(50% - 430px);
+		left: calc(50% - 280px);
 	}
 	50% {
 		top: calc(50%);
-		left: calc(50% - 430px);
+		left: calc(50% - 280px);
 	}
 	60% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 	}
 	90% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 	}
 	100% {
 		top: calc(50% - 40px);
@@ -423,7 +423,7 @@
 @keyframes nickNameAnime {
 	0% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 		transform: translateZ(-3000px);
 	}
 	10% {
@@ -431,27 +431,27 @@
 	}
 	25% {
 		top: calc(50% - 40px);
-		left: calc(50% - 500px);
+		left: calc(50% - 350px);
 	}
 	35% {
 		top: calc(50%);
-		left: calc(50% - 430px);
+		left: calc(50% - 280px);
 	}
 	50% {
 		top: calc(50%);
-		left: calc(50% - 430px);
+		left: calc(50% - 280px);
 	}
 	60% {
 		top: calc(50% + 40px);
-		left: calc(50% - 360px);
+		left: calc(50% - 210px);
 	}
 	90% {
 		top: calc(50% + 40px);
-		left: calc(50% - 360px);
+		left: calc(50% - 210px);
 	}
 	100% {
 		top: calc(50% + 40px);
-		left: -1000px;
+		left: -700px;
 		transform: translateZ(0);
 	}
 }

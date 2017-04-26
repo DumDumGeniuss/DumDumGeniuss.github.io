@@ -19,12 +19,12 @@
 	position: absolute;
 	color: white;
 	padding: 5px;
-	font-size: 0.-5em;
+	font-size: 0.5em;
 	top: -25px;
-	transition: all 0.-5s;
+	transition: all 0.5s;
 }
 
-.FlipCard-titleWordsShow {
+.FlipCard-titleWords.FlipCard-titleWordsShow {
 	top: 0px;
 }
 
@@ -36,7 +36,7 @@
 	top: 50%;
 	-webkit-transform-style: preserve-3d;
 	transform: translate(-50%, -50%) rotateX(0deg);
-	transition: all 0.-5s linear;
+	transition: all 0.5s linear;
 }
 
 .FlipCard-content.FlipCard-contentShow {

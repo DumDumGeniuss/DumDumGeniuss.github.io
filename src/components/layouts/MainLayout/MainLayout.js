@@ -1,14 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import './MainLayout.css';
+import PropTypes from 'prop-types';
 import logoImage from './logo.png';
+import './MainLayout.css';
 
 class MainLayout extends React.Component {
-	static get propTypes() {
-		return {
-			show: React.PropTypes.bool,
-		};
-	}
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -23,7 +18,7 @@ class MainLayout extends React.Component {
 			<div className={'MainLayout-mainZone'}>
 				<navbar className={'MainLayout-navbar'}>
 					<figure className={'MainLayout-logoZone'}>
-						<img className={'MainLayout-logo'} src={logoImage} />
+						<img className={'MainLayout-logo'} src={logoImage} alt={'logo'}/>
 					</figure>
 				</navbar>
 				{this.props.children}
@@ -31,5 +26,9 @@ class MainLayout extends React.Component {
 		);
 	}
 }
+
+MainLayout.propTypes = {
+	show: PropTypes.bool,
+};
 
 export default MainLayout;

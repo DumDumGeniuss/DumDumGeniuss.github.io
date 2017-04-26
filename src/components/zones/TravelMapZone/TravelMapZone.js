@@ -1,13 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import './TravelMapZone.css';
+import PropTypes from 'prop-types';
 import GoogleMapReact from 'google-map-react';
 import mapStyle from './mapStyle.json';
 import FlipCard from '../../cards/FlipCard/FlipCard.js';
 import EmergeMarkerfrom from '../../markers/EmergeMarker/EmergeMarker.js';
+import './TravelMapZone.css';
 
 const fakeCities = [
 	{
+		_id: 'sadfdsafds',
 		country: 'Japan',
 		rank: '1st',
 		name: 'Tokyo',
@@ -16,6 +17,7 @@ const fakeCities = [
 		lng: 139.839478
 	},
 	{
+		_id: 'zcxvewtds',
 		country: 'China',
 		rank: '2nd',
 		name: 'Shanghai',
@@ -24,6 +26,7 @@ const fakeCities = [
 		lng: 121.522179
 	},
 	{
+		_id: 'dsasgxvdet',
 		country: 'Singapore',
 		rank: '3nd',
 		name: 'Singapore',
@@ -32,6 +35,7 @@ const fakeCities = [
 		lng: 103.851959
 	},
 	{
+		_id: 'cxzvewtq',
 		country: 'Taiwan',
 		rank: '4th',
 		name: 'Taipei',
@@ -40,6 +44,7 @@ const fakeCities = [
 		lng: 121.564427
 	},
 	{
+		_id: 'xzvczdsaf',
 		country: 'Taiwan',
 		rank: '5th',
 		name: 'Taichung',
@@ -48,6 +53,7 @@ const fakeCities = [
 		lng: 120.6813889
 	},
 	{
+		_id: 'ewrqsdaf',
 		country: 'China',
 		rank: '6th',
 		name: 'Nanjing',
@@ -58,21 +64,8 @@ const fakeCities = [
 ];
 
 class TravelMapZone extends React.Component {
-	static get propTypes() {
-		return {
-			width: React.PropTypes.number,
-			widthUnit: React.PropTypes.string,
-			height: React.PropTypes.number,
-			heightUnit: React.PropTypes.string,
-			backgroundColor: React.PropTypes.string,
-			position: React.PropTypes.string,
-			top: React.PropTypes.number,
-			topUnit: React.PropTypes.string,
-		};
-	}
 	constructor(props) {
 		super(props);
-		const self = this;
 		this.state = {
 			defaultMapCenter: {lat: 28.5, lng: 128},
 			mapCenter: {lat: 28.5, lng: 128},
@@ -149,7 +142,7 @@ class TravelMapZone extends React.Component {
 	render() {
 		const zoneSize = {
 			width: this.props.width + this.props.widthUnit,
-			height: this.props.height + this. props.heightUnit,
+			height: this.props.height + this.props.heightUnit,
 			backgroundColor: this.props.backgroundColor,
 			position: this.props.position,
 			top: this.props.top + this.props.topUnit,
@@ -169,6 +162,7 @@ class TravelMapZone extends React.Component {
 							this.state.cities.map( (city, index) => {
 								return (
 									<EmergeMarkerfrom 
+										key={city._id}
 										lat={city.lat}
 										lng={city.lng}
 										show={city.show}
@@ -190,6 +184,7 @@ class TravelMapZone extends React.Component {
 							this.state.cities.map( (city, index) => {
 								return (
 									<FlipCard
+										key={city._id}
 										width={300}
 										widthUnit={'px'}
 										height={100}
@@ -210,5 +205,16 @@ class TravelMapZone extends React.Component {
 		);
 	}
 }
+
+TravelMapZone.propTypes = {
+	width: PropTypes.number,
+	widthUnit: PropTypes.string,
+	height: PropTypes.number,
+	heightUnit: PropTypes.string,
+	backgroundColor: PropTypes.string,
+	position: PropTypes.string,
+	top: PropTypes.number,
+	topUnit: PropTypes.string,
+};
 
 export default TravelMapZone;

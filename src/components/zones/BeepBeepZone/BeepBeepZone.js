@@ -1,20 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import PropTypes from 'prop-types';
 import './BeepBeepZone.css';
 
 class BeepBeepZone extends React.Component {
-	static get propTypes() {
-		return {
-			width: React.PropTypes.number,
-			widthUnit: React.PropTypes.string,
-			height: React.PropTypes.number,
-			heightUnit: React.PropTypes.string,
-			backgroundColor: React.PropTypes.string,
-			position: React.PropTypes.string,
-			top: React.PropTypes.number,
-			topUnit: React.PropTypes.string,
-		};
-	}
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -103,38 +91,30 @@ class BeepBeepZone extends React.Component {
 			self.setState(newState);
 		}, time);
 	}
-				// <div className={specialyLeftClass}>
-				// 	<span><b>Programming</b></span>
-				// 	<span><b>Multiple Langauges</b></span>
-				// </div>
-				// <div className={specialyRightClass}>
-				// 	<span><b>Painting</b></span>
-				// 	<span><b>Telling joke</b></span>
-				// </div>
 	render() {
 		const zoneSize = {
 			width: this.props.width + this.props.widthUnit,
-			height: this.props.height + this. props.heightUnit,
+			height: this.props.height + this.props.heightUnit,
 			backgroundColor: this.props.backgroundColor,
 			position: this.props.position,
 			top: this.props.top + this.props.topUnit,
 		};
-		const helloEngClass = this.state.showHelloEng ? 'BeepBeepZone-helloEng' + ' ' + 'BeepBeepZone-hello' : 'BeepBeepZone-invisible';
-		const helloSpanClass = this.state.showHelloSpan ? 'BeepBeepZone-helloSpan' + ' ' + 'BeepBeepZone-hello' : 'BeepBeepZone-invisible';
-		const helloJpnClass = this.state.showHelloJpn ? 'BeepBeepZone-helloJpn' + ' ' + 'BeepBeepZone-hello' : 'BeepBeepZone-invisible';
-		const helloChiClass = this.state.showHelloChi ? 'BeepBeepZone-helloChi' + ' ' + 'BeepBeepZone-hello' : 'BeepBeepZone-invisible';
-		const myNameIsEngClass = this.state.showMyNameIsEng ? 'BeepBeepZone-myNameIsEng' + ' ' + 'BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
-		const myNameIsSpanClass = this.state.showMyNameIsSpan ? 'BeepBeepZone-myNameIsSpan' + ' ' + 'BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
-		const myNameIsJpnClass = this.state.showMyNameIsJpn ? 'BeepBeepZone-myNameIsJpn' + ' ' + 'BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
-		const myNameIsChiClass = this.state.showMyNameIsChi ? 'BeepBeepZone-myNameIsChi' + ' ' + 'BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
-		const myNameClass = this.state.showMyName ? 'BeepBeepZone-myName' + ' ' + 'BeepBeepZone-name' : 'BeepBeepZone-invisible';
-		const akaClass = this.state.showAka ? 'BeepBeepZone-aka' + ' ' + 'BeepBeepZone-name' : 'BeepBeepZone-invisible';
-		const nickNameClass = this.state.showNickName ? 'BeepBeepZone-nickName' + ' ' + 'BeepBeepZone-name' : 'BeepBeepZone-invisible';
-		const specialtyClass = this.state.showSpecialty ? 'BeepBeepZone-specialty' + ' ' + 'BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
-		const specialtyOneClass = this.state.showSpecialtyOne ? 'BeepBeepZone-specialtyOne' + ' ' + 'BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
-		const specialtyTwoClass = this.state.showSpecialtyTwo ? 'BeepBeepZone-specialtyTwo' + ' ' + 'BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
-		const specialtyThreeClass = this.state.showSpecialtyThree ? 'BeepBeepZone-specialtyThree' + ' ' + 'BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
-		const specialtyFourClass = this.state.showSpecialtyFour ? 'BeepBeepZone-specialtyFour' + ' ' + 'BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
+		const helloEngClass = this.state.showHelloEng ? 'BeepBeepZone-helloEng BeepBeepZone-hello' : 'BeepBeepZone-invisible';
+		const helloSpanClass = this.state.showHelloSpan ? 'BeepBeepZone-helloSpan BeepBeepZone-hello' : 'BeepBeepZone-invisible';
+		const helloJpnClass = this.state.showHelloJpn ? 'BeepBeepZone-helloJpn BeepBeepZone-hello' : 'BeepBeepZone-invisible';
+		const helloChiClass = this.state.showHelloChi ? 'BeepBeepZone-helloChi BeepBeepZone-hello' : 'BeepBeepZone-invisible';
+		const myNameIsEngClass = this.state.showMyNameIsEng ? 'BeepBeepZone-myNameIsEng BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
+		const myNameIsSpanClass = this.state.showMyNameIsSpan ? 'BeepBeepZone-myNameIsSpan BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
+		const myNameIsJpnClass = this.state.showMyNameIsJpn ? 'BeepBeepZone-myNameIsJpn BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
+		const myNameIsChiClass = this.state.showMyNameIsChi ? 'BeepBeepZone-myNameIsChi BeepBeepZone-myNameIs' : 'BeepBeepZone-invisible';
+		const myNameClass = this.state.showMyName ? 'BeepBeepZone-myName BeepBeepZone-name' : 'BeepBeepZone-invisible';
+		const akaClass = this.state.showAka ? 'BeepBeepZone-aka BeepBeepZone-name' : 'BeepBeepZone-invisible';
+		const nickNameClass = this.state.showNickName ? 'BeepBeepZone-nickName BeepBeepZone-name' : 'BeepBeepZone-invisible';
+		const specialtyClass = this.state.showSpecialty ? 'BeepBeepZone-specialty BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
+		const specialtyOneClass = this.state.showSpecialtyOne ? 'BeepBeepZone-specialtyOne BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
+		const specialtyTwoClass = this.state.showSpecialtyTwo ? 'BeepBeepZone-specialtyTwo BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
+		const specialtyThreeClass = this.state.showSpecialtyThree ? 'BeepBeepZone-specialtyThree BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
+		const specialtyFourClass = this.state.showSpecialtyFour ? 'BeepBeepZone-specialtyFour BeepBeepZone-specialtyCommon' : 'BeepBeepZone-invisible';
 
 		return (
 			<div style={zoneSize} className={'BeepBeepZone-mainZone'}>
@@ -160,5 +140,16 @@ class BeepBeepZone extends React.Component {
 		);
 	}
 }
+
+BeepBeepZone.propTypes = {
+	width: PropTypes.number,
+	widthUnit: PropTypes.string,
+	height: PropTypes.number,
+	heightUnit: PropTypes.string,
+	backgroundColor: PropTypes.string,
+	position: PropTypes.string,
+	top: PropTypes.number,
+	topUnit: PropTypes.string,
+};
 
 export default BeepBeepZone;

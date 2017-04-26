@@ -1,22 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import PropTypes from 'prop-types';
 import './FlipCard.css';
 
 class FlipCard extends React.Component {
-	static get propTypes() {
-		return {
-			width: React.PropTypes.number,
-			widthUnit: React.PropTypes.string,
-			height: React.PropTypes.number,
-			heightUnit: React.PropTypes.string,
-			titleWords: React.PropTypes.string,
-			frontWords: React.PropTypes.string,
-			backWords: React.PropTypes.string,
-			show: React.PropTypes.bool,
-			onMouseEnter: React.PropTypes.func,
-			onMouseLeave: React.PropTypes.func,
-		};
-	}
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -37,11 +23,11 @@ class FlipCard extends React.Component {
 			width: this.props.width + this.props.widthUnit,
 			height: this.props.height + this.props.heightUnit,
 		};
-		const mainZoneClass = this.props.show ? 'FlipCard-mainZone' + ' ' + 'FlipCard-mainZoneShow' : 'FlipCard-mainZone';
-		const contentClass = this.props.show ? 'FlipCard-content' + ' ' + 'FlipCard-contentShow' : 'FlipCard-content';
-		const frontWordsClass = 'FlipCard-middleWords' + ' ' + 'FlipCard-frontWords';
-		const backWordsClass = 'FlipCard-middleWords' + ' ' + 'FlipCard-backWords';
-		const titleWordsClass = this.props.show ? 'FlipCard-titleWords' + ' ' + 'FlipCard-titleWordsShow' : 'FlipCard-titleWords';
+		const mainZoneClass = this.props.show ? 'FlipCard-mainZone FlipCard-mainZoneShow' : 'FlipCard-mainZone';
+		const contentClass = this.props.show ? 'FlipCard-content FlipCard-contentShow' : 'FlipCard-content';
+		const frontWordsClass = 'FlipCard-middleWords FlipCard-frontWords';
+		const backWordsClass = 'FlipCard-middleWords FlipCard-backWords';
+		const titleWordsClass = this.props.show ? 'FlipCard-titleWords FlipCard-titleWordsShow' : 'FlipCard-titleWords';
 
 		return (
 			<div
@@ -59,5 +45,18 @@ class FlipCard extends React.Component {
 		);
 	}
 }
+
+FlipCard.propTypes = {
+	width: PropTypes.number,
+	widthUnit: PropTypes.string,
+	height: PropTypes.number,
+	heightUnit: PropTypes.string,
+	titleWords: PropTypes.string,
+	frontWords: PropTypes.string,
+	backWords: PropTypes.string,
+	show: PropTypes.bool,
+	onMouseEnter: PropTypes.func,
+	onMouseLeave: PropTypes.func,
+};
 
 export default FlipCard;

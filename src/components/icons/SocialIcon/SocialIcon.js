@@ -1,24 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import './SocialIcon.css';
+import PropTypes from 'prop-types';
 import Medium from 'react-icons/lib/fa/medium';
 import Facebook from 'react-icons/lib/fa/facebook';
 import Github from 'react-icons/lib/fa/github-alt';
 import Youtube from 'react-icons/lib/fa/youtube';
 import Linkedin from 'react-icons/lib/fa/linkedin';
 import 'react-icons/lib/fa/linkedin';
+import './SocialIcon.css';
 
 class SocialIcon extends React.Component {
-	static get propTypes() {
-		return {
-			type: React.PropTypes.string,
-			link: React.PropTypes.string,
-			backgroundColor: React.PropTypes.string,
-			color: React.PropTypes.string,
-			onMouseEnter: React.PropTypes.func,
-			onMouseLeave: React.PropTypes.func
-		};
-	}
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -35,20 +25,21 @@ class SocialIcon extends React.Component {
 	getIcon(type) {
 		return this.typeIconMap[type];
 	}
-	_onMouseClick(e) {
-
-	}
 	_onMouseEnter(e) {
 		this.setState({
 			spin: true
 		});
-		this.props.onMouseEnter(e);
+		if (this.props.onMouseEnter) {
+			this.props.onMouseEnter(e);
+		}
 	}
 	_onMouseLeave(e) {
 		this.setState({
 			spin: false
 		});
-		this.props.onMouseLeave(e);
+		if (this.props.onMouseLeave) {
+			this.props.onMouseLeave(e);
+		}
 	}
 	render() {
 		const iconStyle = {
@@ -56,7 +47,7 @@ class SocialIcon extends React.Component {
 			backgroundColor: this.props.backgroundColor
 		}
 		const Icon = this.getIcon(this.props.type);
-		const mainZoneClass = this.state.spin ? 'SocialIcon-mainZone' + ' ' + 'SocialIcon-mainZoneSpin' : 'SocialIcon-mainZone';
+		const mainZoneClass = this.state.spin ? 'SocialIcon-mainZone SocialIcon-mainZoneSpin' : 'SocialIcon-mainZone';
 
 		return (
 			<a
@@ -75,5 +66,14 @@ class SocialIcon extends React.Component {
 		);
 	}
 }
+
+SocialIcon.propTypes = {
+	type: PropTypes.string,
+	link: PropTypes.string,
+	backgroundColor: PropTypes.string,
+	color: PropTypes.string,
+	onMouseEnter: PropTypes.func,
+	onMouseLeave: PropTypes.func
+};
 
 export default SocialIcon;

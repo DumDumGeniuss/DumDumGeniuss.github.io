@@ -1,15 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import PropTypes from 'prop-types';
 import './EmergeMarker.css';
 
 class EmergeMarker extends React.Component {
-	static get propTypes() {
-		return {
-			show: React.PropTypes.bool,
-			onMouseEnter: React.PropTypes.func,
-			onMouseLeave: React.PropTypes.func,
-		};
-	}
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -26,7 +19,7 @@ class EmergeMarker extends React.Component {
 		this.props.onMouseLeave();
 	}
 	render() {
-		const locationCircleClass = this.props.show ? 'EmergeMarker-locationCircle' + ' ' + 'EmergeMarker-locationCircleShow' : 'EmergeMarker-locationCircle';
+		const locationCircleClass = this.props.show ? 'EmergeMarker-locationCircle EmergeMarker-locationCircleShow' : 'EmergeMarker-locationCircle';
 		const squareZoneClass = this.props.show ? 'EmergeMarker-squareZone' : 'EmergeMarker-invisible';
 		return (
 			<div className={'EmergeMarker-mainZone'}>
@@ -44,5 +37,11 @@ class EmergeMarker extends React.Component {
 		);
 	}
 }
+
+EmergeMarker.propTypes = {
+	show: PropTypes.bool,
+	onMouseEnter: PropTypes.func,
+	onMouseLeave: PropTypes.func,
+};
 
 export default EmergeMarker;

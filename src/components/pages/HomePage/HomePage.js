@@ -1,6 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import GhostFontZone from '../../zones/GhostFontZone/GhostFontZone.js';
 import SocialIconsZone from '../../zones/SocialIconsZone/SocialIconsZone.js';
 import TravelMapZone from '../../zones/TravelMapZone/TravelMapZone.js';
 import BeepBeepZone from '../../zones/BeepBeepZone/BeepBeepZone.js';
@@ -75,5 +73,7 @@ class HomePage extends React.Component {
 		);
 	}
 }
+
+HomePage.propTypes = {};
 
 export default HomePage;
