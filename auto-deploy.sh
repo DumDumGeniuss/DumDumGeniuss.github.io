@@ -1,3 +1,6 @@
+if [ -z $1 ]; then
+  echo hi
+fi
 git add .
 git commit -m "$1"
 yarn deploy

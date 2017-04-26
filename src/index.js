@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-snapshot';
-import HomePage from './components/pages/HomePage/HomePage.js';
+import Routes from './routes/routes.js';
 import './index.css';
 
 render(
-  <HomePage />,
+  <Routes />,
   document.getElementById('root')
 );
