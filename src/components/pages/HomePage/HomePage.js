@@ -2,6 +2,7 @@ import React from "react";
 import SocialIconsZone from '../../zones/SocialIconsZone/SocialIconsZone.js';
 import TravelMapZone from '../../zones/TravelMapZone/TravelMapZone.js';
 import BeepBeepZone from '../../zones/BeepBeepZone/BeepBeepZone.js';
+import StarWarsZone from '../../zones/StarWarsZone/StarWarsZone.js';
 import ArrowUp from 'react-icons/lib/fa/arrow-up';
 import ArrowDown from 'react-icons/lib/fa/arrow-down';
 import './HomePage.css';
@@ -12,7 +13,7 @@ class HomePage extends React.Component {
 		this.state = {
 			currentLockZone: 0
 		};
-		this.totalZone = 2;
+		this.totalZone = 3;
 	}
 	componentDidMount() {
 	}
@@ -64,6 +65,17 @@ class HomePage extends React.Component {
 					backgroundColor={'white'}
 					position={'absolute'}
 					top={this.state.currentLockZone === 1 ? 0 : 100}
+					topUnit={'%'}
+				/>
+				<StarWarsZone
+					ref={'firstZone'}
+					width={100}
+					widthUnit={'%'}
+					height={100}
+					heightUnit={'vh'}
+					backgroundColor={'black'}
+					position={'absolute'}
+					top={this.state.currentLockZone === 2 ? 0 : 100}
 					topUnit={'%'}
 				/>
 			</div>

@@ -23,11 +23,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.SocialIconsZone-iconsZone {
+/*	.SocialIconsZone-iconsZone {
 	    flex-direction: row;
 	    justify-content: space-around;
 		left: 50%;
 		bottom: 0;
 		transform: translate(-50%, 0);
-	}
+	}*/
 }

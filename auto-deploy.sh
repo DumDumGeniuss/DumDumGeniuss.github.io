@@ -4,7 +4,7 @@ if [ -z $1 ]; then
 fi
 git add .
 git commit -m "$1"
-git push origin master
+git push origin dev
 yarn deploy
 git checkout gh-pages
 git pull origin gh-pages
