@@ -1,5 +1,6 @@
 if [ -z $1 ]; then
-  echo hi
+  echo You did\'t key in the log comment;
+  exit 1;
 fi
 git add .
 git commit -m "$1"
