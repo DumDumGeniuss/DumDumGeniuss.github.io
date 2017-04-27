@@ -34,6 +34,10 @@ class ShuffledZone extends React.Component {
 
 		return (
 			<div style={zoneSize}>
+				<div className={'ShuffledZone-attentionZone'}>
+					<span className={'ShuffledZone-attention'}><b>注意</b></span>
+					<span className={'ShuffledZone-thankAttention'}><b>感謝你的注意</b></span>
+				</div>
 				<figure
 					onMouseEnter={this.showUmer.bind(this, true)}
 					onMouseLeave={this.showUmer.bind(this, false)}
