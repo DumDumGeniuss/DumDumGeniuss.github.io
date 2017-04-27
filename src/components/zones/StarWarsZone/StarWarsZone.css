@@ -7,15 +7,20 @@
 
 .starWarLogo {
 	position: absolute;
-	width: 50%;
-	left: 25%;
-	top: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
 	opacity: 1;
 	transition: opacity 1s;
 }
 
 .starWarLogo > img {
-	width: 100%;
+	width: 60%;
+	max-width: 80vh;
 }
 
 .starWarLogoFadeOut {
@@ -51,6 +56,7 @@
 	height: 50px;
 	border-radius: 50px;
 	border: 2px solid #fbbf0b;
+	z-index: 2;
 }
 
 .functionIcon > svg {
@@ -64,7 +70,7 @@
 	height: 30px;
 }
 
-.functionIcon > svg:hover {
+.functionIcon:hover {
 	cursor: pointer;
 }
 

@@ -12,7 +12,7 @@ class StarWarsZone extends React.Component {
 		this.state = {
 			starWarScrollMarginTop: 0,
 			starWarViewRotate: 0,
-			movieStatus: true,
+			movieStatus: false,
 			starWarLogoZ: 0,
 			starWarLogoFadeOut: false
 		};
@@ -37,7 +37,7 @@ class StarWarsZone extends React.Component {
 		const oldPlayVideo = this.props.playVideo;
 		if (newPlayVideo !== oldPlayVideo) {
 			if (newPlayVideo) {
-				this.switchAnimation(true);
+				// this.switchAnimation(true);
 			} else {
 				this.switchAnimation(false);
 			}
@@ -85,17 +85,16 @@ class StarWarsZone extends React.Component {
 			this.moveLogoZ = setInterval(() => {
 				const currentZ = self.state.starWarLogoZ;
 				self.setState({
-					starWarLogoZ: currentZ - 10
+					starWarLogoZ: currentZ - 5
 				});
 				if (self.scrollInterval === undefined && currentZ < - 500) {
 					self.switchScroll(true);
 				}
-				if (currentZ < -6000) {
+				if (currentZ < -3500) {
 					self.setState({
 						starWarLogoFadeOut: true
 					});
 				}
-				console.log('hi');
 			}, 15);
 		} else {
 			clearInterval(this.moveLogoZ);
