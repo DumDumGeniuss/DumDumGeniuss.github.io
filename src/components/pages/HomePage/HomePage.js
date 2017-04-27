@@ -17,10 +17,11 @@ class HomePage extends React.Component {
 	}
 	componentDidMount() {
 		const queryParams = new URLSearchParams(this.props.location.search);
+		console.log(queryParams.get('zone'));
 		if (queryParams.get('zone')) {
-			this.state = {
+			this.setState ({
 				currentLockZone: parseInt(queryParams.get('zone'), 10)
-			};
+			});
 		}
 	}
 	componentWillUnmount() {
