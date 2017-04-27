@@ -2,12 +2,14 @@ import React from "react";
 import PropTypes from 'prop-types';
 import './ShuffledZone.css';
 import Umer from './umer.png';
+import GyFace from './gyFace.png';
 
 class ShuffledZone extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			showUmer: false,
+			showGyWords: false,
 		};
 	}
 	componentDidMount() {
@@ -20,6 +22,17 @@ class ShuffledZone extends React.Component {
 		} else {
 			this.setState({
 				showUmer: false
+			});
+		}
+	}
+	showGyWords(show) {
+		if (show) {
+			this.setState({
+				showGyWords: true
+			});
+		} else {
+			this.setState({
+				showGyWords: false
 			});
 		}
 	}
@@ -38,6 +51,14 @@ class ShuffledZone extends React.Component {
 					<span className={'ShuffledZone-attention'}><b>注意</b></span>
 					<span className={'ShuffledZone-thankAttention'}><b>感謝你的注意</b></span>
 				</div>
+				<figure
+					onMouseEnter={this.showGyWords.bind(this, true)}
+					onMouseLeave={this.showGyWords.bind(this, false)}
+					className={'ShuffledZone-gyFace'}
+				>
+					<div style={ {display: this.state.showGyWords ? 'initial' : 'none'} } className={'ShuffledZone-gyFaceWords'}>可以做朋友嗎？</div>
+					<img src={GyFace} />
+				</figure>
 				<figure
 					onMouseEnter={this.showUmer.bind(this, true)}
 					onMouseLeave={this.showUmer.bind(this, false)}
