@@ -14,6 +14,7 @@ class StarWarsZone extends React.Component {
 			starWarViewRotate: 0,
 			movieStatus: true,
 			starWarLogoZ: 0,
+			starWarLogoFadeOut: false
 		};
 		this.switchScroll = this.switchScroll.bind(this);
 		this.switchMoveStarWarLogoZ = this.switchMoveStarWarLogoZ.bind(this);
@@ -61,7 +62,11 @@ class StarWarsZone extends React.Component {
 			});
 		}
 	}
-	switchStarWarsAudio(play) {
+	switchStarWarsAudio(play, reset) {
+		if (reset) {
+			this.startWarsAudio.currentTime = 0;
+			return;
+		}
 		if (play) {
 			this.startWarsAudio.play();
 		} else {
@@ -70,19 +75,27 @@ class StarWarsZone extends React.Component {
 	}
 	initialStarWarLogoZ() {
 		this.setState({
-			starWarLogoZ: 0
+			starWarLogoZ: 0,
+			starWarLogoFadeOut: false
 		});
 	}
 	switchMoveStarWarLogoZ(play) {
 		const self = this;
 		if (play) {
 			this.moveLogoZ = setInterval(() => {
+				const currentZ = self.state.starWarLogoZ;
 				self.setState({
-					starWarLogoZ: self.state.starWarLogoZ - 10
+					starWarLogoZ: currentZ - 10
 				});
-				if (self.scrollInterval === undefined && self.state.starWarLogoZ < - 500) {
+				if (self.scrollInterval === undefined && currentZ < - 500) {
 					self.switchScroll(true);
 				}
+				if (currentZ < -6000) {
+					self.setState({
+						starWarLogoFadeOut: true
+					});
+				}
+				console.log('hi');
 			}, 15);
 		} else {
 			clearInterval(this.moveLogoZ);
@@ -106,13 +119,11 @@ class StarWarsZone extends React.Component {
 					self.switchAnimation(false);
 					self.initialStarWarsScroll();
 					self.initialStarWarLogoZ();
+					self.switchStarWarsAudio(null, true);
 				}
 			}, 15);
 		} else {
 			clearInterval(this.scrollInterval);
-			this.setState({
-				movieStatus: false
-			});
 		}
 	}
 	render() {
@@ -123,6 +134,7 @@ class StarWarsZone extends React.Component {
 			position: this.props.position,
 			top: this.props.top + this.props.topUnit,
 		};
+		const starWarLogoClass = this.state.starWarLogoFadeOut ? 'starWarLogo starWarLogoFadeOut' : 'starWarLogo';
 
 		return (
 			<div style={zoneSize} className={'mainArea'}>
@@ -143,7 +155,7 @@ class StarWarsZone extends React.Component {
 				>
 					<Play />
 				</div>
-				<figure style={ {transform: 'translateZ(' + this.state.starWarLogoZ + 'px)'} } className={'starWarLogo'}>
+				<figure style={ {transform: 'translateZ(' + this.state.starWarLogoZ + 'px)'} } className={starWarLogoClass}>
 					<img src={starLog} alt={'DumDumGenius Logo'}/>
 				</figure>
 				<div

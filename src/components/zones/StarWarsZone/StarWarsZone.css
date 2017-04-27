@@ -10,10 +10,16 @@
 	width: 50%;
 	left: 25%;
 	top: 10%;
+	opacity: 1;
+	transition: opacity 1s;
 }
 
 .starWarLogo > img {
 	width: 100%;
+}
+
+.starWarLogoFadeOut {
+	opacity: 0;
 }
 
 .starWarView {
