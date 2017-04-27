@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.a3f64e85.css",
-  "main.css.map": "static/css/main.a3f64e85.css.map",
-  "main.js": "static/js/main.d518710e.js",
-  "main.js.map": "static/js/main.d518710e.js.map",
+  "main.css": "static/css/main.5b21c0bf.css",
+  "main.css.map": "static/css/main.5b21c0bf.css.map",
+  "main.js": "static/js/main.3f13d369.js",
+  "main.js.map": "static/js/main.3f13d369.js.map",
   "static/media/drugMouse.jpg": "static/media/drugMouse.00b11bd0.jpg",
   "static/media/fireDragon.png": "static/media/fireDragon.a7593b3a.png",
   "static/media/gyFace.png": "static/media/gyFace.b74c7146.png",
@@ -11,5 +11,6 @@
   "static/media/starwars.mp3": "static/media/starwars.719ec993.mp3",
   "static/media/starwars.png": "static/media/starwars.bb2fe1aa.png",
   "static/media/swagMan.png": "static/media/swagMan.b0633c87.png",
+  "static/media/tamas.png": "static/media/tamas.97dad42d.png",
   "static/media/umer.png": "static/media/umer.6c94d8ae.png"
 }
