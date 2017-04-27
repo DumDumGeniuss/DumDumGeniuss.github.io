@@ -93,7 +93,7 @@ class HomePage extends React.Component {
 					widthUnit={'%'}
 					height={100}
 					heightUnit={'vh'}
-					backgroundColor={'white'}
+					backgroundColor={'none'}
 					position={'absolute'}
 					top={this.state.currentLockZone === 3 ? 0 : 100}
 					topUnit={'%'}
