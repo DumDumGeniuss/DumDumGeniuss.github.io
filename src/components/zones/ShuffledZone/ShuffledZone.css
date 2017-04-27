@@ -2,12 +2,13 @@
 	position: absolute;
 	bottom: -35px;
 	right: 100px;
-	width: 300px;
+	width: 200px;
 	height: 350px;
+	cursor: pointer;
 }
 
 .ShuffledZone-umerWords {
-	/*display: none;*/
+	position: absolute;
 	width: 200px;
 	height: 50px;
 	border: 1px solid black;
@@ -16,3 +17,7 @@
 	text-align: center;
 }
 
+.ShuffledZone-umer > img {
+	position: absolute;
+	top: 50px;
+}

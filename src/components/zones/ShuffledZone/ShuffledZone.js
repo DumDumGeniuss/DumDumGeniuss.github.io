@@ -7,13 +7,21 @@ class ShuffledZone extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			showUmer: false
+			showUmer: false,
 		};
 	}
 	componentDidMount() {
 	}
-	showUmer() {
-
+	showUmer(show) {
+		if (show) {
+			this.setState({
+				showUmer: true
+			});
+		} else {
+			this.setState({
+				showUmer: false
+			});
+		}
 	}
 	render() {
 		const zoneSize = {
@@ -26,13 +34,12 @@ class ShuffledZone extends React.Component {
 
 		return (
 			<div style={zoneSize}>
-				<figure className={'ShuffledZone-umer'}>
-					<div
-						onMouseEnter={this.showUmer.bind(this)}
-						className={'ShuffledZone-umerWords'}
-					>
-						ㄩㄇ？
-					</div>
+				<figure
+					onMouseEnter={this.showUmer.bind(this, true)}
+					onMouseLeave={this.showUmer.bind(this, false)}
+					className={'ShuffledZone-umer'}
+				>
+					<div style={ {display: this.state.showUmer ? 'initial' : 'none'} } className={'ShuffledZone-umerWords'}>ㄩㄇ？</div>
 					<img src={Umer} alt={'霸主 王希銘'}/>
 				</figure>
 			</div>
