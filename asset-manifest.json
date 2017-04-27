@@ -1,7 +1,9 @@
 {
-  "main.css": "static/css/main.c6280735.css",
-  "main.css.map": "static/css/main.c6280735.css.map",
-  "main.js": "static/js/main.a1160399.js",
-  "main.js.map": "static/js/main.a1160399.js.map",
-  "static/media/logo.png": "static/media/logo.6f2eef6d.png"
+  "main.css": "static/css/main.68f497e6.css",
+  "main.css.map": "static/css/main.68f497e6.css.map",
+  "main.js": "static/js/main.76d283be.js",
+  "main.js.map": "static/js/main.76d283be.js.map",
+  "static/media/logo.png": "static/media/logo.6f2eef6d.png",
+  "static/media/starwars.mp3": "static/media/starwars.719ec993.mp3",
+  "static/media/starwars.png": "static/media/starwars.bb2fe1aa.png"
 }
