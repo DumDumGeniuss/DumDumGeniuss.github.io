@@ -7,6 +7,7 @@ import LalaBear from './lalaBear.png';
 import SwagMan from './swagMan.png';
 import DrugMouse from './drugMouse.jpg';
 import FireDragon from './fireDragon.png';
+import Tamas from './tamas.png';
 
 class ShuffledZone extends React.Component {
 	constructor(props) {
@@ -62,6 +63,11 @@ class ShuffledZone extends React.Component {
 					className={'ShuffledZone-fireDragon'}
 				>
 					<img src={FireDragon} />
+				</figure>
+				<figure
+					className={'ShuffledZone-tamas'}
+				>
+					<img src={Tamas} />
 				</figure>
 				<figure
 					className={'ShuffledZone-lalaBear'}

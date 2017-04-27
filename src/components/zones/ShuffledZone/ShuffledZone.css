@@ -80,6 +80,24 @@
 	right: 200px;
 }
 
+.ShuffledZone-lalaBear > img {
+	width: 250px;
+}
+
+.ShuffledZone-tamas {
+	position: absolute;
+	top: 50px;
+	right: 200px;
+}
+
+.ShuffledZone-tamas > img {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 150px;
+	animation: moveRight 5s linear infinite;
+}
+
 .ShuffledZone-swagMan {
 	position: absolute;
 	bottom: 250px;
@@ -144,5 +162,20 @@
 	}
 	100% {
 		transform: rotate(-360deg);
+	}
+}
+
+@keyframes moveRight {
+	0% {
+		right: 40px; 
+	}
+	20% {
+		right: -60px; 
+	}
+	40% {
+		right: 40px; 
+	}
+	100% {
+		right: 40px;
 	}
 }
