@@ -5,10 +5,21 @@
 	background-color: black;
 }
 
+.starWarLogo {
+	position: absolute;
+	width: 50%;
+	left: 25%;
+	top: 10%;
+}
+
+.starWarLogo > img {
+	width: 100%;
+}
+
 .starWarView {
 	/*transform: rotateX(60deg)*/;
 	position: absolute;
-	height: calc(300vh);
+	height: calc(500vh);
 	width: 100%;
 	/*left: -50%;*/
 	bottom: 0;

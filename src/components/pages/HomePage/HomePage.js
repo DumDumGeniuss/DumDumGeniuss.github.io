@@ -77,6 +77,7 @@ class HomePage extends React.Component {
 					position={'absolute'}
 					top={this.state.currentLockZone === 2 ? 0 : 100}
 					topUnit={'%'}
+					playVideo={this.state.currentLockZone === 2}
 				/>
 			</div>
 		);
