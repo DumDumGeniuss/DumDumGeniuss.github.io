@@ -6,9 +6,14 @@ import Umer from './umer.png';
 class ShuffledZone extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			showUmer: false
+		};
 	}
 	componentDidMount() {
+	}
+	showUmer() {
+
 	}
 	render() {
 		const zoneSize = {
@@ -21,7 +26,15 @@ class ShuffledZone extends React.Component {
 
 		return (
 			<div style={zoneSize}>
-				<img className={'ShuffledZone-umer'} src={Umer} alt={'霸主 王希銘'}/>
+				<figure className={'ShuffledZone-umer'}>
+					<div
+						onMouseEnter={this.showUmer.bind(this)}
+						className={'ShuffledZone-umerWords'}
+					>
+						ㄩㄇ？
+					</div>
+					<img src={Umer} alt={'霸主 王希銘'}/>
+				</figure>
 			</div>
 		);
 	}
