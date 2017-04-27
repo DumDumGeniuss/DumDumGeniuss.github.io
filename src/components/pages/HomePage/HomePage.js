@@ -10,13 +10,16 @@ import './HomePage.css';
 class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
-		const queryParams = new URLSearchParams(props.location.search);
 		this.state = {
-			currentLockZone: parseInt(queryParams.get('zone'), 10)
+			currentLockZone: 0
 		};
 		this.totalZone = 3;
 	}
 	componentDidMount() {
+		const queryParams = new URLSearchParams(this.props.location.search);
+		this.state = {
+			currentLockZone: parseInt(queryParams.get('zone'), 10)
+		};
 	}
 	componentWillUnmount() {
 	}
