@@ -24,10 +24,11 @@
 	position: absolute;
 	width: 200px;
 	height: 50px;
-	border: 1px solid black;
+	border: 1px solid white;
 	border-radius: 150px;
 	line-height: 50px;
 	text-align: center;
+	color: white;
 }
 
 .ShuffledZone-umer > img {
@@ -48,15 +49,27 @@
 	position: absolute;
 	width: 200px;
 	height: 50px;
-	border: 1px solid black;
+	border: 1px solid white;
 	border-radius: 150px;
 	line-height: 50px;
 	text-align: center;
+	color: white;
 }
 
 .ShuffledZone-gyFace > img {
 	position: absolute;
 	top: 50px;
+}
+
+.ShuffledZone-fireDragon {
+	position: absolute;
+	left: 200px;
+	bottom: 50px;
+	animation: spin 5s linear infinite;
+}
+
+.ShuffledZone-fireDragon > img {
+	width: 300px;
 }
 
 .ShuffledZone-lalaBear {
@@ -91,6 +104,7 @@
 	font-size: 3em;
 	text-align: center;
 	animation: blink 2s infinite;
+	color: white;
 }
 
 .ShuffledZone-thankAttention {
@@ -98,6 +112,7 @@
 	text-align: center;
 	animation: blink 2s infinite;
 	animation-delay: 1s;
+	color: white;
 }
 
 @keyframes blink{
@@ -109,5 +124,14 @@
 	}
 	100% {
 		opacity: 0
+	}
+}
+
+@keyframes spin{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
