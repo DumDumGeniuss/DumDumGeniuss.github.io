@@ -52,6 +52,17 @@
 	right: 200px;
 }
 
+.ShuffledZone-swagMan {
+	position: absolute;
+	bottom: 250px;
+	left: 50px;
+}
+
+.ShuffledZone-swagMan > img {
+	position: absolute;
+	width: 150px;
+}
+
 .ShuffledZone-attentionZone {
 	position: absolute;
 	display: inline-flex;

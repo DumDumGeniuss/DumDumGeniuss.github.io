@@ -4,6 +4,7 @@ import './ShuffledZone.css';
 import Umer from './umer.png';
 import GyFace from './gyFace.png';
 import LalaBear from './lalaBear.png';
+import SwagMan from './swagMan.png';
 
 class ShuffledZone extends React.Component {
 	constructor(props) {
@@ -56,6 +57,11 @@ class ShuffledZone extends React.Component {
 					className={'ShuffledZone-lalaBear'}
 				>
 					<img src={LalaBear} />
+				</figure>
+				<figure
+					className={'ShuffledZone-swagMan'}
+				>
+					<img src={SwagMan} />
 				</figure>
 				<figure
 					onMouseEnter={this.showGyWords.bind(this, true)}
