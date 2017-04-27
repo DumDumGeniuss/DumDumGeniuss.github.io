@@ -6,9 +6,11 @@
 
 .backgroudZone > img {
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	/*transform: translate(0%, -50%);*/
+	width: 200vw;
+	height: 200vh;
+	left: -50vw;
+	top: -50vh;
+	animation: spin 5s linear infinite;
 }
 
 .ShuffledZone-umer {
@@ -65,7 +67,7 @@
 	position: absolute;
 	left: 200px;
 	bottom: 50px;
-	animation: spin 5s linear infinite;
+	animation: counterSpin 5s linear infinite;
 }
 
 .ShuffledZone-fireDragon > img {
@@ -133,5 +135,14 @@
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes counterSpin{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
 	}
 }
