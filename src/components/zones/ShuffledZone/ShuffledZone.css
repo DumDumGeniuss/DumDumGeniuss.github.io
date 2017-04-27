@@ -1,3 +1,16 @@
+.backgroudZone {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.backgroudZone > img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*transform: translate(0%, -50%);*/
+}
+
 .ShuffledZone-umer {
 	position: absolute;
 	bottom: -35px;

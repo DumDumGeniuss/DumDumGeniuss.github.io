@@ -5,6 +5,7 @@ import Umer from './umer.png';
 import GyFace from './gyFace.png';
 import LalaBear from './lalaBear.png';
 import SwagMan from './swagMan.png';
+import DrugMouse from './drugMouse.jpg';
 
 class ShuffledZone extends React.Component {
 	constructor(props) {
@@ -49,6 +50,9 @@ class ShuffledZone extends React.Component {
 
 		return (
 			<div style={zoneSize}>
+				<div className={'backgroudZone'}>
+					<img src={DrugMouse} />
+				</div>
 				<div className={'ShuffledZone-attentionZone'}>
 					<span className={'ShuffledZone-attention'}><b>注意</b></span>
 					<span className={'ShuffledZone-thankAttention'}><b>感謝你的注意</b></span>
