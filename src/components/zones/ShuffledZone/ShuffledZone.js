@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import './ShuffledZone.css';
+import Umer from './umer.png';
 
 class ShuffledZone extends React.Component {
 	constructor(props) {
@@ -20,6 +21,7 @@ class ShuffledZone extends React.Component {
 
 		return (
 			<div style={zoneSize}>
+				<img className={'ShuffledZone-umer'} src={Umer} alt={'霸主 王希銘'}/>
 			</div>
 		);
 	}
