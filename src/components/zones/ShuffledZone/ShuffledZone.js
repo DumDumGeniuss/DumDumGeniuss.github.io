@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './ShuffledZone.css';
 import Umer from './umer.png';
 import GyFace from './gyFace.png';
+import LalaBear from './lalaBear.png';
 
 class ShuffledZone extends React.Component {
 	constructor(props) {
@@ -51,6 +52,11 @@ class ShuffledZone extends React.Component {
 					<span className={'ShuffledZone-attention'}><b>注意</b></span>
 					<span className={'ShuffledZone-thankAttention'}><b>感謝你的注意</b></span>
 				</div>
+				<figure
+					className={'ShuffledZone-lalaBear'}
+				>
+					<img src={LalaBear} />
+				</figure>
 				<figure
 					onMouseEnter={this.showGyWords.bind(this, true)}
 					onMouseLeave={this.showGyWords.bind(this, false)}

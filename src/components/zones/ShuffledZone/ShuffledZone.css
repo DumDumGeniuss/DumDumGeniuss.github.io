@@ -46,6 +46,12 @@
 	top: 50px;
 }
 
+.ShuffledZone-lalaBear {
+	position: absolute;
+	top: 50px;
+	right: 200px;
+}
+
 .ShuffledZone-attentionZone {
 	position: absolute;
 	display: inline-flex;
