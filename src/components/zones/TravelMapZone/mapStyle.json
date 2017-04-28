@@ -4,10 +4,10 @@
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "lightness": "-87"
+                "lightness": "-100"
             },
             {
-                "color": "#1f1f1f"
+                "color": "black"
             }
         ]
     },
@@ -184,7 +184,7 @@
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#396666"
+                "color": "#072c40"
             }
         ]
     },

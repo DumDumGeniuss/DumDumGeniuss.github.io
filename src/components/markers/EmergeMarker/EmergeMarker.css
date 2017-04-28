@@ -9,9 +9,9 @@
 .EmergeMarker-locationCircle {
 	position: absolute;
 	transform: translate(-50%, -50%);
-	width: 16px;
-	height: 16px;
-	border-radius: 8px;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
 	background-color: #8a0c0c;
 	border: 1px solid white;
 	cursor: pointer;

@@ -1,6 +1,6 @@
 .FlipCard-mainZone {
 	/*background: linear-gradient(141deg, #2ea2a2 0%, #2fb7c5 51%, #48c0c3 75%);*/
-	background-color: #396666;
+	background-color: #072c40;
 	border-bottom: 1px solid #8a8a8a;
 	display: block;
 	position: relative;
@@ -12,7 +12,7 @@
 
 .FlipCard-mainZoneShow {
 	/*background: linear-gradient(141deg, #48c0c3 0%, #2fb7c5 51%, #2ea2a2 75%);*/
-	background-color: #669e9e;
+	background-color: #2a6496;
 }
 
 .FlipCard-titleWords {
