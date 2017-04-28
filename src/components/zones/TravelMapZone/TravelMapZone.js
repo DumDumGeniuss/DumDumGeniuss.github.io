@@ -93,18 +93,18 @@ class TravelMapZone extends React.Component {
 			mapCenter: {lat: this.state.mapCenter.lat, lng: this.state.mapCenter.lng + 1}
 		});
 	}
-	_onCardsMouseEnter(index, city, e) {
+	_onCardsMouseEnter(index, city) {
 		this.changeMapCenter( {lat: city.lat, lng: city.lng});
 		this.switchCity(index, true);
 	}
-	_onCardsMouseLeave(index, city, e) {
+	_onCardsMouseLeave(index, city) {
 		this.changeMapCenter( {lat: city.lat, lng: city.lng});
 		this.switchCity(index, false);
 	}
-	_onMarkerMouseEnter(index, city, e) {
+	_onMarkerMouseEnter(index, city) {
 		this.switchCity(index, true);
 	}
-	_onMarkerMouseLeave(index, city, e) {
+	_onMarkerMouseLeave(index, city) {
 		this.switchCity(index, false);
 	}
 	switchCity(index, isOn) {

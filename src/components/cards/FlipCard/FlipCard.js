@@ -12,11 +12,11 @@ class FlipCard extends React.Component {
 	}
 	componentWillUnmount() {
 	}
-	_onMouseEnter(e) {
-		this.props.onMouseEnter(e);
+	_onMouseEnter() {
+		this.props.onMouseEnter();
 	}
-	_onMouseLeave(e) {
-		this.props.onMouseLeave(e);
+	_onMouseLeave() {
+		this.props.onMouseLeave();
 	}
 	render() {
 		const mainZoneStyle = {
