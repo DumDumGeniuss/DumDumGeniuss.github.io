@@ -1,0 +1,18 @@
+.SubWebsitesZone-mainZone {
+	overflow: hidden;
+}
+
+.SubWebsitesZone-title {
+	height: 150px;
+	line-height: 150px;
+	color: white;
+	text-align: center;
+	font-size: 3.5em;
+	font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+}
+
+.SubWebsitesZone-websitesZone {
+	margin-left: 10%;
+	width: 80%;
+	height: calc(100% - 150px);
+}

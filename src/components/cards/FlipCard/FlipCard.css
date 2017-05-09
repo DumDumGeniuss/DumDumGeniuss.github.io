@@ -1,7 +1,7 @@
 .FlipCard-mainZone {
 	/*background: linear-gradient(141deg, #2ea2a2 0%, #2fb7c5 51%, #48c0c3 75%);*/
 	background-color: #072c40;
-	border-bottom: 1px solid #8a8a8a;
+	border-bottom: 1px solid black;
 	display: block;
 	position: relative;
 	perspective: 150px;

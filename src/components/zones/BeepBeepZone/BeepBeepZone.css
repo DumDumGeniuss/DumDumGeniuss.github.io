@@ -20,7 +20,7 @@
 	line-height: 120px;
 	text-align: center;
 	overflow: hidden;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
 }
 
 .BeepBeepZone-helloEng {
@@ -51,7 +51,7 @@
 	color: white;
 	line-height: 120px;
 	text-align: center;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
 }
 
 .BeepBeepZone-myNameIsEng {
@@ -87,7 +87,7 @@
 	line-height: 80px;
 	text-align: center;
 	background-color: black;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
 	transform: translate3d(-50%, -50%, 0px);
 }
 
@@ -121,7 +121,7 @@
 	height: 80px;
 	line-height: 80px;
 	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
 }
 
 .BeepBeepZone-specialty {
