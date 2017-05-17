@@ -1,16 +1,12 @@
 {
-  "main.css": "static/css/main.82ac63c2.css",
-  "main.css.map": "static/css/main.82ac63c2.css.map",
-  "main.js": "static/js/main.bb9d8f60.js",
-  "main.js.map": "static/js/main.bb9d8f60.js.map",
-  "static/media/drugMouse.jpg": "static/media/drugMouse.00b11bd0.jpg",
-  "static/media/fireDragon.png": "static/media/fireDragon.a7593b3a.png",
-  "static/media/gyFace.png": "static/media/gyFace.b74c7146.png",
-  "static/media/lalaBear.png": "static/media/lalaBear.b52f9f6f.png",
+  "main.css": "static/css/main.e416713d.css",
+  "main.css.map": "static/css/main.e416713d.css.map",
+  "main.js": "static/js/main.4923ad58.js",
+  "main.js.map": "static/js/main.4923ad58.js.map",
+  "static/media/Create-Express-Mongo-Mocha.jpg": "static/media/Create-Express-Mongo-Mocha.2fdb0860.jpg",
+  "static/media/Learning-Japanese-With-DumDum-Genius.jpg": "static/media/Learning-Japanese-With-DumDum-Genius.6414ecac.jpg",
+  "static/media/React-Universal-React-Starter-Kit.jpg": "static/media/React-Universal-React-Starter-Kit.21b792fc.jpg",
   "static/media/logo.png": "static/media/logo.6f2eef6d.png",
   "static/media/starwars.mp3": "static/media/starwars.719ec993.mp3",
-  "static/media/starwars.png": "static/media/starwars.bb2fe1aa.png",
-  "static/media/swagMan.png": "static/media/swagMan.b0633c87.png",
-  "static/media/tamas.png": "static/media/tamas.97dad42d.png",
-  "static/media/umer.png": "static/media/umer.6c94d8ae.png"
+  "static/media/starwars.png": "static/media/starwars.bb2fe1aa.png"
 }
