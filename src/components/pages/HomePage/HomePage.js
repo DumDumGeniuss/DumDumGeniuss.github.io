@@ -3,8 +3,8 @@ import SocialIconsZone from '../../zones/SocialIconsZone/SocialIconsZone.js';
 import TravelMapZone from '../../zones/TravelMapZone/TravelMapZone.js';
 import BeepBeepZone from '../../zones/BeepBeepZone/BeepBeepZone.js';
 import StarWarsZone from '../../zones/StarWarsZone/StarWarsZone.js';
-import ShuffledZone from '../../zones/ShuffledZone/ShuffledZone.js';
-import SubWebsitesZone from '../../zones/SubWebsitesZone/SubWebsitesZone.js';
+// import ShuffledZone from '../../zones/ShuffledZone/ShuffledZone.js';
+import ProjectsZone from '../../zones/ProjectsZone/ProjectsZone.js';
 import ArrowUp from 'react-icons/lib/fa/arrow-up';
 import ArrowDown from 'react-icons/lib/fa/arrow-down';
 import './HomePage.css';
@@ -99,7 +99,7 @@ class HomePage extends React.Component {
 					topUnit={'%'}
 					playVideo={this.state.currentLockZone === 2}
 				/>
-				<SubWebsitesZone
+				<ProjectsZone
 					ref={'firstZone'}
 					width={100}
 					widthUnit={'%'}

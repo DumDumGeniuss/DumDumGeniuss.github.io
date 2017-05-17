@@ -1,0 +1,32 @@
+.ProjectsZone-mainZone {
+	overflow: hidden;
+}
+
+.ProjectsZone-title {
+	margin-top: 50px;
+	height: 100px;
+	line-height: 100px;
+	color: white;
+	text-align: center;
+	font-size: 3.5em;
+	font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+}
+
+.ProjectsZone-porjectsBox {
+	height: calc(100% - 150px);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ProjectsZone-porjectsBox > div {
+	width: 400px;
+	height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+	.ProjectsZone-title {
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,63 @@
+.PromoteBox-mainZone {
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.PromoteBox-imgBox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: grow-to-fill 0.5s linear;
+}
+
+.PromoteBox-imgBoxHide {
+	display: none;
+}
+
+@keyframes grow-to-fill {
+	0% {
+		width: 0%;
+		height: 0%;
+		border-radius: 100%;
+	}
+	50% {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+		border-radius: 0%;
+	}
+}
+
+/*@keyframes grow-to-empty {
+	0% {
+		width: 100%;
+		height: 100%;
+		border-radius: 0%;
+	}
+	50% {
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+	}
+	100% {
+		width: 0%;
+		height: 0%;
+		border-radius: 100%;
+	}
+}*/
+
+.PromoteBox-imgBox img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
