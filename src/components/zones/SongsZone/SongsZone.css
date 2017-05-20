@@ -1,0 +1,75 @@
+.SongsZone-invisible {
+	display: none;
+}
+
+.SongsZone-mainZone {
+	overflow: hidden;
+}
+
+.SongsZone-background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	opacity: 0.4;
+}
+
+.SongsZone-background img {
+	position: absolute;
+	width: 120vw;
+	top: 50%;
+	transform: translate(0%, -50%);
+	animation: float-left 8s linear;
+}
+
+@keyframes float-left {
+	0% {
+		left: 0vw;
+		opacity: 0;
+	}
+	20% {
+		left: -4vw;
+		opacity: 1;
+	}
+	80% {
+		left: -16vw;
+		opacity: 1;
+	}
+	100% {
+		left: -20vw;
+		opacity: 0;
+	}
+}
+
+.SongsZone-titleZone {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+	animation: font-emerge 8s linear;
+	font-family: "jaf-facitweb","Helvetica Neue",Arial,sans-serif;
+}
+
+@keyframes font-emerge {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}

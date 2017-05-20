@@ -5,6 +5,7 @@ import BeepBeepZone from '../../zones/BeepBeepZone/BeepBeepZone.js';
 import StarWarsZone from '../../zones/StarWarsZone/StarWarsZone.js';
 // import ShuffledZone from '../../zones/ShuffledZone/ShuffledZone.js';
 import ProjectsZone from '../../zones/ProjectsZone/ProjectsZone.js';
+import SongsZone from '../../zones/SongsZone/SongsZone.js';
 import ArrowUp from 'react-icons/lib/fa/arrow-up';
 import ArrowDown from 'react-icons/lib/fa/arrow-down';
 import './HomePage.css';
@@ -15,11 +16,10 @@ class HomePage extends React.Component {
 		this.state = {
 			currentLockZone: 0
 		};
-		this.totalZone = 4;
+		this.totalZone = 5;
 	}
 	componentDidMount() {
 		const queryParams = new URLSearchParams(this.props.location.search);
-		console.log(queryParams.get('zone'));
 		if (queryParams.get('zone')) {
 			this.setState ({
 				currentLockZone: parseInt(queryParams.get('zone'), 10)
@@ -109,6 +109,18 @@ class HomePage extends React.Component {
 					position={'absolute'}
 					top={this.state.currentLockZone === 3 ? 0 : 100}
 					topUnit={'%'}
+				/>
+				<SongsZone
+					ref={'firstZone'}
+					width={100}
+					widthUnit={'%'}
+					height={100}
+					heightUnit={'vh'}
+					backgroundColor={'black'}
+					position={'absolute'}
+					top={this.state.currentLockZone === 4 ? 0 : 100}
+					topUnit={'%'}
+					playAudio={this.state.currentLockZone === 4}
 				/>
 			</div>
 		);

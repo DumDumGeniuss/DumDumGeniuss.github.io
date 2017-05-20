@@ -22,7 +22,7 @@ class StarWarsZone extends React.Component {
 		this.switchStarWarsAudio = this.switchStarWarsAudio.bind(this);
 	}
 	componentDidMount() {
-		this.startWarsAudio =document.getElementById('star-wars-audio');
+		this.startWarsAudio = document.getElementById('star-wars-audio');
 
 		this.starWarScrollHeight = this.refs.starWarScroll.getBoundingClientRect().height;
 		this.starWarViewHeight = this.refs.startWarView.getBoundingClientRect().height;
