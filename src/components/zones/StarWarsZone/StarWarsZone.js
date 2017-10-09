@@ -166,28 +166,12 @@ class StarWarsZone extends React.Component {
 						<h1 className={'bitTitle'}><b>Hello</b></h1>
 						<b>
 							<p className={'paragraph'}>
-								Hello, I'm Messi Yang, from Chiao Tung University, Taiwanese.
-								I have two years experience in Web Development, now I'm a JavaScript full-stacker.
-								As a backend, I like to use NodeJS, Docker, Amazone, Nginx, MongoDB, Postgres, Linux.
-								As a frontend, I like to use PostCSS, React & Redux, ES6/7, Webpack.
-								There's a perfectionist in my mind, but I know in the world we live, perfect does not exist, so what I have to do is keeping changing and changing.
-								I believe that language is the best way to solve problems and help you to get closer to the world, so I also learned other languages like Japanese and Spanish.
-								I've been waiting for a opportunity to show my power and work with people from different countries or cultures, that will be challenging and interesting!
-			
-								<br/>1. Chinese > English > Japanese > Spanish
-								<br/>2. Great skill in Javascript, Node and some popular 3rd-party libraries.
-								<br/>3. Have great power of UI design, I can do lots of cool Graphical User Interface, it sometimes involved physics, but not a problem for me.
-								<br/>4. React, Redux, ES6, ES7, know how to design components and how to make friend with Redux.
-								<br/>5. Basic knowledge on CS, like data structure, algorithm.
-								<br/>6. Use docker to manage or deploy all my own projects.
-								<br/>7. Popular database like Postgres, MySQL and NoSQL database like Mongo.
-								<br/>8. Use git, and know how to develop with git flow.
-								<br/>9. Hands-on experience in payment flow, Alipay.
-								<br/>10. Know how to do LoadBalance, ReverseProxy, Cache and build service on Amazon or Azure or others.
-								<br/>11. Like to use CI/CD to solve annoying problems ( Jenkins, Drone CI ) .
-								
-								<br/>＊2017 NTU Big Data Hackathon
-								<br/>＊2017 Sprint Hackathon (1st Prize)
+								I am a full-stack web developer with two years commercial experience.
+								My best profession is Javascript, I use ES6 / ES7 and strict coding style to build clean,
+								testable and elegant codes. With strong HTML5 / CSS3 skill, I can perfectly cooperate with
+								visual designers whist meeting other essential requirements.
+								Also I can work independently as a back-end developer, create clear RESTFUL API,
+								improve the database performance, write specific document and test functions properly.
 							</p>
 						</b>
 					</div>
