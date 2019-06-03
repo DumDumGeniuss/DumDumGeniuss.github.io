@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.43b9df85.css",
   "main.css.map": "static/css/main.43b9df85.css.map",
-  "main.js": "static/js/main.44dfdc2e.js",
-  "main.js.map": "static/js/main.44dfdc2e.js.map",
+  "main.js": "static/js/main.0f6543b7.js",
+  "main.js.map": "static/js/main.0f6543b7.js.map",
   "static/media/Create-Express-Mongo-Mocha.jpg": "static/media/Create-Express-Mongo-Mocha.2fdb0860.jpg",
   "static/media/GREEEEN.jpg": "static/media/GREEEEN.c03bda56.jpg",
   "static/media/Learning-Japanese-With-DumDum-Genius.jpg": "static/media/Learning-Japanese-With-DumDum-Genius.6414ecac.jpg",
@@ -16,7 +16,6 @@
   "static/media/mongro800.jpg": "static/media/mongro800.256955a5.jpg",
   "static/media/mr-children.jpg": "static/media/mr-children.3bb4a027.jpg",
   "static/media/starwars.mp3": "static/media/starwars.719ec993.mp3",
-  "static/media/starwars.png": "static/media/starwars.bb2fe1aa.png",
   "static/media/sunny-day.mp3": "static/media/sunny-day.76cb3a90.mp3",
   "static/media/zi-min-ga-chun-giao.mp3": "static/media/zi-min-ga-chun-giao.0ea89932.mp3"
 }
