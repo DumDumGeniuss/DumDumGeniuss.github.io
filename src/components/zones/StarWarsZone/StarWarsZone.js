@@ -4,7 +4,7 @@ import Pause from 'react-icons/lib/fa/pause';
 import Play from 'react-icons/lib/fa/play';
 import './StarWarsZone.css';
 import starAudio from './starwars.mp3';
-import starLog from './starwars.png';
+import starLog from './baobao.png';
 
 class StarWarsZone extends React.Component {
 	constructor() {
