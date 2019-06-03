@@ -163,15 +163,13 @@ class StarWarsZone extends React.Component {
 					className={'starWarView'}
 				>
 					<div ref={'starWarScroll'} style={{marginTop: this.state.starWarScrollMarginTop + 'px'}}>
-						<h1 className={'bitTitle'}><b>Hello</b></h1>
+						<h1 className={'bitTitle'}><b>沈聿柔對不起</b></h1>
 						<b>
 							<p className={'paragraph'}>
-								I am a full-stack web developer with two years commercial experience.
-								My best profession is Javascript, I use ES6 / ES7 and strict coding style to build clean,
-								testable and elegant codes. With strong HTML5 / CSS3 skill, I can perfectly cooperate with
-								visual designers whist meeting other essential requirements.
-								Also I can work independently as a back-end developer, create clear RESTFUL API,
-								improve the database performance, write specific document and test functions properly.
+								寶寶對不起我錯了，我剛剛不應該講什麼健達出奇蛋之類的蠢話，
+								還有寶寶我也很對不起我忘記今天是你去日本的重要日子，
+								寶寶你可不可以原諒我今天的白目行為ˊ＿ˋ，
+								本当にすいませんでした&#x3C;(_ _)&#x3E;
 							</p>
 						</b>
 					</div>
